@@ -1,0 +1,229 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Jan 22 23:00:02 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+TIMEGRP clk = BEL "dp/one_counter/w_10" BEL "dp/one_counter/w_9" BEL
+        "dp/one_counter/w_8" BEL "dp/one_counter/w_7" BEL "dp/one_counter/w_6"
+        BEL "dp/one_counter/w_5" BEL "dp/one_counter/w_4" BEL
+        "dp/one_counter/w_3" BEL "dp/one_counter/w_2" BEL "dp/one_counter/w_1"
+        BEL "dp/one_counter/w_0" BEL "dp/mac0/Acc_reg/b_20" BEL
+        "dp/mac0/Acc_reg/b_19" BEL "dp/mac0/Acc_reg/b_18" BEL
+        "dp/mac0/Acc_reg/b_17" BEL "dp/mac0/Acc_reg/b_16" BEL
+        "dp/mac0/Acc_reg/b_15" BEL "dp/mac0/Acc_reg/b_14" BEL
+        "dp/mac0/Acc_reg/b_13" BEL "dp/mac0/Acc_reg/b_12" BEL
+        "dp/mac0/Acc_reg/b_11" BEL "dp/mac0/Acc_reg/b_10" BEL
+        "dp/mac0/Acc_reg/b_9" BEL "dp/mac0/Acc_reg/b_8" BEL
+        "dp/mac0/Acc_reg/b_7" BEL "dp/mac0/Acc_reg/b_6" BEL
+        "dp/mac0/Acc_reg/b_5" BEL "dp/mac0/Acc_reg/b_4" BEL
+        "dp/mac0/Acc_reg/b_3" BEL "dp/mac0/Acc_reg/b_2" BEL
+        "dp/mac0/Acc_reg/b_1" BEL "dp/mac0/Acc_reg/b_0" BEL
+        "dp/mac1/Acc_reg/b_20" BEL "dp/mac1/Acc_reg/b_19" BEL
+        "dp/mac1/Acc_reg/b_18" BEL "dp/mac1/Acc_reg/b_17" BEL
+        "dp/mac1/Acc_reg/b_16" BEL "dp/mac1/Acc_reg/b_15" BEL
+        "dp/mac1/Acc_reg/b_14" BEL "dp/mac1/Acc_reg/b_13" BEL
+        "dp/mac1/Acc_reg/b_12" BEL "dp/mac1/Acc_reg/b_11" BEL
+        "dp/mac1/Acc_reg/b_10" BEL "dp/mac1/Acc_reg/b_9" BEL
+        "dp/mac1/Acc_reg/b_8" BEL "dp/mac1/Acc_reg/b_7" BEL
+        "dp/mac1/Acc_reg/b_6" BEL "dp/mac1/Acc_reg/b_5" BEL
+        "dp/mac1/Acc_reg/b_4" BEL "dp/mac1/Acc_reg/b_3" BEL
+        "dp/mac1/Acc_reg/b_2" BEL "dp/mac1/Acc_reg/b_1" BEL
+        "dp/mac1/Acc_reg/b_0" BEL "dp/mac2/Acc_reg/b_20" BEL
+        "dp/mac2/Acc_reg/b_19" BEL "dp/mac2/Acc_reg/b_18" BEL
+        "dp/mac2/Acc_reg/b_17" BEL "dp/mac2/Acc_reg/b_16" BEL
+        "dp/mac2/Acc_reg/b_15" BEL "dp/mac2/Acc_reg/b_14" BEL
+        "dp/mac2/Acc_reg/b_13" BEL "dp/mac2/Acc_reg/b_12" BEL
+        "dp/mac2/Acc_reg/b_11" BEL "dp/mac2/Acc_reg/b_10" BEL
+        "dp/mac2/Acc_reg/b_9" BEL "dp/mac2/Acc_reg/b_8" BEL
+        "dp/mac2/Acc_reg/b_7" BEL "dp/mac2/Acc_reg/b_6" BEL
+        "dp/mac2/Acc_reg/b_5" BEL "dp/mac2/Acc_reg/b_4" BEL
+        "dp/mac2/Acc_reg/b_3" BEL "dp/mac2/Acc_reg/b_2" BEL
+        "dp/mac2/Acc_reg/b_1" BEL "dp/mac2/Acc_reg/b_0" BEL
+        "dp/mac3/Acc_reg/b_20" BEL "dp/mac3/Acc_reg/b_19" BEL
+        "dp/mac3/Acc_reg/b_18" BEL "dp/mac3/Acc_reg/b_17" BEL
+        "dp/mac3/Acc_reg/b_16" BEL "dp/mac3/Acc_reg/b_15" BEL
+        "dp/mac3/Acc_reg/b_14" BEL "dp/mac3/Acc_reg/b_13" BEL
+        "dp/mac3/Acc_reg/b_12" BEL "dp/mac3/Acc_reg/b_11" BEL
+        "dp/mac3/Acc_reg/b_10" BEL "dp/mac3/Acc_reg/b_9" BEL
+        "dp/mac3/Acc_reg/b_8" BEL "dp/mac3/Acc_reg/b_7" BEL
+        "dp/mac3/Acc_reg/b_6" BEL "dp/mac3/Acc_reg/b_5" BEL
+        "dp/mac3/Acc_reg/b_4" BEL "dp/mac3/Acc_reg/b_3" BEL
+        "dp/mac3/Acc_reg/b_2" BEL "dp/mac3/Acc_reg/b_1" BEL
+        "dp/mac3/Acc_reg/b_0" BEL "dp/mac4/Acc_reg/b_20" BEL
+        "dp/mac4/Acc_reg/b_19" BEL "dp/mac4/Acc_reg/b_18" BEL
+        "dp/mac4/Acc_reg/b_17" BEL "dp/mac4/Acc_reg/b_16" BEL
+        "dp/mac4/Acc_reg/b_15" BEL "dp/mac4/Acc_reg/b_14" BEL
+        "dp/mac4/Acc_reg/b_13" BEL "dp/mac4/Acc_reg/b_12" BEL
+        "dp/mac4/Acc_reg/b_11" BEL "dp/mac4/Acc_reg/b_10" BEL
+        "dp/mac4/Acc_reg/b_9" BEL "dp/mac4/Acc_reg/b_8" BEL
+        "dp/mac4/Acc_reg/b_7" BEL "dp/mac4/Acc_reg/b_6" BEL
+        "dp/mac4/Acc_reg/b_5" BEL "dp/mac4/Acc_reg/b_4" BEL
+        "dp/mac4/Acc_reg/b_3" BEL "dp/mac4/Acc_reg/b_2" BEL
+        "dp/mac4/Acc_reg/b_1" BEL "dp/mac4/Acc_reg/b_0" BEL
+        "dp/mac5/Acc_reg/b_20" BEL "dp/mac5/Acc_reg/b_19" BEL
+        "dp/mac5/Acc_reg/b_18" BEL "dp/mac5/Acc_reg/b_17" BEL
+        "dp/mac5/Acc_reg/b_16" BEL "dp/mac5/Acc_reg/b_15" BEL
+        "dp/mac5/Acc_reg/b_14" BEL "dp/mac5/Acc_reg/b_13" BEL
+        "dp/mac5/Acc_reg/b_12" BEL "dp/mac5/Acc_reg/b_11" BEL
+        "dp/mac5/Acc_reg/b_10" BEL "dp/mac5/Acc_reg/b_9" BEL
+        "dp/mac5/Acc_reg/b_8" BEL "dp/mac5/Acc_reg/b_7" BEL
+        "dp/mac5/Acc_reg/b_6" BEL "dp/mac5/Acc_reg/b_5" BEL
+        "dp/mac5/Acc_reg/b_4" BEL "dp/mac5/Acc_reg/b_3" BEL
+        "dp/mac5/Acc_reg/b_2" BEL "dp/mac5/Acc_reg/b_1" BEL
+        "dp/mac5/Acc_reg/b_0" BEL "dp/mac6/Acc_reg/b_20" BEL
+        "dp/mac6/Acc_reg/b_19" BEL "dp/mac6/Acc_reg/b_18" BEL
+        "dp/mac6/Acc_reg/b_17" BEL "dp/mac6/Acc_reg/b_16" BEL
+        "dp/mac6/Acc_reg/b_15" BEL "dp/mac6/Acc_reg/b_14" BEL
+        "dp/mac6/Acc_reg/b_13" BEL "dp/mac6/Acc_reg/b_12" BEL
+        "dp/mac6/Acc_reg/b_11" BEL "dp/mac6/Acc_reg/b_10" BEL
+        "dp/mac6/Acc_reg/b_9" BEL "dp/mac6/Acc_reg/b_8" BEL
+        "dp/mac6/Acc_reg/b_7" BEL "dp/mac6/Acc_reg/b_6" BEL
+        "dp/mac6/Acc_reg/b_5" BEL "dp/mac6/Acc_reg/b_4" BEL
+        "dp/mac6/Acc_reg/b_3" BEL "dp/mac6/Acc_reg/b_2" BEL
+        "dp/mac6/Acc_reg/b_1" BEL "dp/mac6/Acc_reg/b_0" BEL
+        "dp/mac7/Acc_reg/b_20" BEL "dp/mac7/Acc_reg/b_19" BEL
+        "dp/mac7/Acc_reg/b_18" BEL "dp/mac7/Acc_reg/b_17" BEL
+        "dp/mac7/Acc_reg/b_16" BEL "dp/mac7/Acc_reg/b_15" BEL
+        "dp/mac7/Acc_reg/b_14" BEL "dp/mac7/Acc_reg/b_13" BEL
+        "dp/mac7/Acc_reg/b_12" BEL "dp/mac7/Acc_reg/b_11" BEL
+        "dp/mac7/Acc_reg/b_10" BEL "dp/mac7/Acc_reg/b_9" BEL
+        "dp/mac7/Acc_reg/b_8" BEL "dp/mac7/Acc_reg/b_7" BEL
+        "dp/mac7/Acc_reg/b_6" BEL "dp/mac7/Acc_reg/b_5" BEL
+        "dp/mac7/Acc_reg/b_4" BEL "dp/mac7/Acc_reg/b_3" BEL
+        "dp/mac7/Acc_reg/b_2" BEL "dp/mac7/Acc_reg/b_1" BEL
+        "dp/mac7/Acc_reg/b_0" BEL "dp/mac8/Acc_reg/b_20" BEL
+        "dp/mac8/Acc_reg/b_19" BEL "dp/mac8/Acc_reg/b_18" BEL
+        "dp/mac8/Acc_reg/b_17" BEL "dp/mac8/Acc_reg/b_16" BEL
+        "dp/mac8/Acc_reg/b_15" BEL "dp/mac8/Acc_reg/b_14" BEL
+        "dp/mac8/Acc_reg/b_13" BEL "dp/mac8/Acc_reg/b_12" BEL
+        "dp/mac8/Acc_reg/b_11" BEL "dp/mac8/Acc_reg/b_10" BEL
+        "dp/mac8/Acc_reg/b_9" BEL "dp/mac8/Acc_reg/b_8" BEL
+        "dp/mac8/Acc_reg/b_7" BEL "dp/mac8/Acc_reg/b_6" BEL
+        "dp/mac8/Acc_reg/b_5" BEL "dp/mac8/Acc_reg/b_4" BEL
+        "dp/mac8/Acc_reg/b_3" BEL "dp/mac8/Acc_reg/b_2" BEL
+        "dp/mac8/Acc_reg/b_1" BEL "dp/mac8/Acc_reg/b_0" BEL
+        "dp/mac9/Acc_reg/b_20" BEL "dp/mac9/Acc_reg/b_19" BEL
+        "dp/mac9/Acc_reg/b_18" BEL "dp/mac9/Acc_reg/b_17" BEL
+        "dp/mac9/Acc_reg/b_16" BEL "dp/mac9/Acc_reg/b_15" BEL
+        "dp/mac9/Acc_reg/b_14" BEL "dp/mac9/Acc_reg/b_13" BEL
+        "dp/mac9/Acc_reg/b_12" BEL "dp/mac9/Acc_reg/b_11" BEL
+        "dp/mac9/Acc_reg/b_10" BEL "dp/mac9/Acc_reg/b_9" BEL
+        "dp/mac9/Acc_reg/b_8" BEL "dp/mac9/Acc_reg/b_7" BEL
+        "dp/mac9/Acc_reg/b_6" BEL "dp/mac9/Acc_reg/b_5" BEL
+        "dp/mac9/Acc_reg/b_4" BEL "dp/mac9/Acc_reg/b_3" BEL
+        "dp/mac9/Acc_reg/b_2" BEL "dp/mac9/Acc_reg/b_1" BEL
+        "dp/mac9/Acc_reg/b_0" BEL "dp/store_regs/_o1306_6" BEL
+        "dp/store_regs/_o1306_5" BEL "dp/store_regs/_o1306_4" BEL
+        "dp/store_regs/_o1306_3" BEL "dp/store_regs/_o1306_2" BEL
+        "dp/store_regs/_o1306_1" BEL "dp/store_regs/_o1306_0" BEL
+        "dp/store_regs/_o1292_6" BEL "dp/store_regs/_o1292_5" BEL
+        "dp/store_regs/_o1292_4" BEL "dp/store_regs/_o1292_3" BEL
+        "dp/store_regs/_o1292_2" BEL "dp/store_regs/_o1292_1" BEL
+        "dp/store_regs/_o1292_0" BEL "dp/store_regs/_o1278_6" BEL
+        "dp/store_regs/_o1278_5" BEL "dp/store_regs/_o1278_4" BEL
+        "dp/store_regs/_o1278_3" BEL "dp/store_regs/_o1278_2" BEL
+        "dp/store_regs/_o1278_1" BEL "dp/store_regs/_o1278_0" BEL
+        "dp/store_regs/_o1264_6" BEL "dp/store_regs/_o1264_5" BEL
+        "dp/store_regs/_o1264_4" BEL "dp/store_regs/_o1264_3" BEL
+        "dp/store_regs/_o1264_2" BEL "dp/store_regs/_o1264_1" BEL
+        "dp/store_regs/_o1264_0" BEL "dp/store_regs/_o1250_6" BEL
+        "dp/store_regs/_o1250_5" BEL "dp/store_regs/_o1250_4" BEL
+        "dp/store_regs/_o1250_3" BEL "dp/store_regs/_o1250_2" BEL
+        "dp/store_regs/_o1250_1" BEL "dp/store_regs/_o1250_0" BEL
+        "dp/store_regs/_o1222_6" BEL "dp/store_regs/_o1222_5" BEL
+        "dp/store_regs/_o1222_4" BEL "dp/store_regs/_o1222_3" BEL
+        "dp/store_regs/_o1222_2" BEL "dp/store_regs/_o1222_1" BEL
+        "dp/store_regs/_o1222_0" BEL "dp/store_regs/_o1208_6" BEL
+        "dp/store_regs/_o1208_5" BEL "dp/store_regs/_o1208_4" BEL
+        "dp/store_regs/_o1208_3" BEL "dp/store_regs/_o1208_2" BEL
+        "dp/store_regs/_o1208_1" BEL "dp/store_regs/_o1208_0" BEL
+        "dp/store_regs/_o1236_6" BEL "dp/store_regs/_o1236_5" BEL
+        "dp/store_regs/_o1236_4" BEL "dp/store_regs/_o1236_3" BEL
+        "dp/store_regs/_o1236_2" BEL "dp/store_regs/_o1236_1" BEL
+        "dp/store_regs/_o1236_0" BEL "dp/store_regs/_o1194_6" BEL
+        "dp/store_regs/_o1194_5" BEL "dp/store_regs/_o1194_4" BEL
+        "dp/store_regs/_o1194_3" BEL "dp/store_regs/_o1194_2" BEL
+        "dp/store_regs/_o1194_1" BEL "dp/store_regs/_o1194_0" BEL
+        "dp/store_regs/_o1180_6" BEL "dp/store_regs/_o1180_5" BEL
+        "dp/store_regs/_o1180_4" BEL "dp/store_regs/_o1180_3" BEL
+        "dp/store_regs/_o1180_2" BEL "dp/store_regs/_o1180_1" BEL
+        "dp/store_regs/_o1180_0" BEL "dp/store_regs/_o1166_6" BEL
+        "dp/store_regs/_o1166_5" BEL "dp/store_regs/_o1166_4" BEL
+        "dp/store_regs/_o1166_3" BEL "dp/store_regs/_o1166_2" BEL
+        "dp/store_regs/_o1166_1" BEL "dp/store_regs/_o1166_0" BEL
+        "dp/store_regs/_o1152_6" BEL "dp/store_regs/_o1152_5" BEL
+        "dp/store_regs/_o1152_4" BEL "dp/store_regs/_o1152_3" BEL
+        "dp/store_regs/_o1152_2" BEL "dp/store_regs/_o1152_1" BEL
+        "dp/store_regs/_o1152_0" BEL "dp/store_regs/_o1124_6" BEL
+        "dp/store_regs/_o1124_5" BEL "dp/store_regs/_o1124_4" BEL
+        "dp/store_regs/_o1124_3" BEL "dp/store_regs/_o1124_2" BEL
+        "dp/store_regs/_o1124_1" BEL "dp/store_regs/_o1124_0" BEL
+        "dp/store_regs/_o1110_6" BEL "dp/store_regs/_o1110_5" BEL
+        "dp/store_regs/_o1110_4" BEL "dp/store_regs/_o1110_3" BEL
+        "dp/store_regs/_o1110_2" BEL "dp/store_regs/_o1110_1" BEL
+        "dp/store_regs/_o1110_0" BEL "dp/store_regs/_o1138_6" BEL
+        "dp/store_regs/_o1138_5" BEL "dp/store_regs/_o1138_4" BEL
+        "dp/store_regs/_o1138_3" BEL "dp/store_regs/_o1138_2" BEL
+        "dp/store_regs/_o1138_1" BEL "dp/store_regs/_o1138_0" BEL
+        "dp/store_regs/_o1096_6" BEL "dp/store_regs/_o1096_5" BEL
+        "dp/store_regs/_o1096_4" BEL "dp/store_regs/_o1096_3" BEL
+        "dp/store_regs/_o1096_2" BEL "dp/store_regs/_o1096_1" BEL
+        "dp/store_regs/_o1096_0" BEL "dp/store_regs/_o1082_6" BEL
+        "dp/store_regs/_o1082_5" BEL "dp/store_regs/_o1082_4" BEL
+        "dp/store_regs/_o1082_3" BEL "dp/store_regs/_o1082_2" BEL
+        "dp/store_regs/_o1082_1" BEL "dp/store_regs/_o1082_0" BEL
+        "dp/store_regs/_o1068_6" BEL "dp/store_regs/_o1068_5" BEL
+        "dp/store_regs/_o1068_4" BEL "dp/store_regs/_o1068_3" BEL
+        "dp/store_regs/_o1068_2" BEL "dp/store_regs/_o1068_1" BEL
+        "dp/store_regs/_o1068_0" BEL "dp/store_regs/_o1054_6" BEL
+        "dp/store_regs/_o1054_5" BEL "dp/store_regs/_o1054_4" BEL
+        "dp/store_regs/_o1054_3" BEL "dp/store_regs/_o1054_2" BEL
+        "dp/store_regs/_o1054_1" BEL "dp/store_regs/_o1054_0" BEL
+        "dp/store_regs/_o1040_6" BEL "dp/store_regs/_o1040_5" BEL
+        "dp/store_regs/_o1040_4" BEL "dp/store_regs/_o1040_3" BEL
+        "dp/store_regs/_o1040_2" BEL "dp/store_regs/_o1040_1" BEL
+        "dp/store_regs/_o1040_0" BEL "cont/ps_FSM_FFd10" BEL
+        "cont/F2/result_31" BEL "cont/F2/result_30" BEL "cont/F2/result_29"
+        BEL "cont/F2/result_28" BEL "cont/F2/result_27" BEL
+        "cont/F2/result_26" BEL "cont/F2/result_25" BEL "cont/F2/result_24"
+        BEL "cont/F2/result_23" BEL "cont/F2/result_22" BEL
+        "cont/F2/result_21" BEL "cont/F2/result_20" BEL "cont/F2/result_19"
+        BEL "cont/F2/result_18" BEL "cont/F2/result_17" BEL
+        "cont/F2/result_16" BEL "cont/F2/result_15" BEL "cont/F2/result_14"
+        BEL "cont/F2/result_13" BEL "cont/F2/result_12" BEL
+        "cont/F2/result_11" BEL "cont/F2/result_10" BEL "cont/F2/result_9" BEL
+        "cont/F2/result_8" BEL "cont/F2/result_7" BEL "cont/F2/result_6" BEL
+        "cont/F2/result_5" BEL "cont/F2/result_4" BEL "cont/F2/result_3" BEL
+        "cont/F2/result_2" BEL "cont/F2/result_1" BEL "cont/F2/result_0" BEL
+        "cont/F1/result_31" BEL "cont/F1/result_30" BEL "cont/F1/result_29"
+        BEL "cont/F1/result_28" BEL "cont/F1/result_27" BEL
+        "cont/F1/result_26" BEL "cont/F1/result_25" BEL "cont/F1/result_24"
+        BEL "cont/F1/result_23" BEL "cont/F1/result_22" BEL
+        "cont/F1/result_21" BEL "cont/F1/result_20" BEL "cont/F1/result_19"
+        BEL "cont/F1/result_18" BEL "cont/F1/result_17" BEL
+        "cont/F1/result_16" BEL "cont/F1/result_15" BEL "cont/F1/result_14"
+        BEL "cont/F1/result_13" BEL "cont/F1/result_12" BEL
+        "cont/F1/result_11" BEL "cont/F1/result_10" BEL "cont/F1/result_9" BEL
+        "cont/F1/result_8" BEL "cont/F1/result_7" BEL "cont/F1/result_6" BEL
+        "cont/F1/result_5" BEL "cont/F1/result_4" BEL "cont/F1/result_3" BEL
+        "cont/F1/result_2" BEL "cont/F1/result_1" BEL "cont/F1/result_0" BEL
+        "cont/F3/result_31" BEL "cont/F3/result_30" BEL "cont/F3/result_29"
+        BEL "cont/F3/result_28" BEL "cont/F3/result_27" BEL
+        "cont/F3/result_26" BEL "cont/F3/result_25" BEL "cont/F3/result_24"
+        BEL "cont/F3/result_23" BEL "cont/F3/result_22" BEL
+        "cont/F3/result_21" BEL "cont/F3/result_20" BEL "cont/F3/result_19"
+        BEL "cont/F3/result_18" BEL "cont/F3/result_17" BEL
+        "cont/F3/result_16" BEL "cont/F3/result_15" BEL "cont/F3/result_14"
+        BEL "cont/F3/result_13" BEL "cont/F3/result_12" BEL
+        "cont/F3/result_11" BEL "cont/F3/result_10" BEL "cont/F3/result_9" BEL
+        "cont/F3/result_8" BEL "cont/F3/result_7" BEL "cont/F3/result_6" BEL
+        "cont/F3/result_5" BEL "cont/F3/result_4" BEL "cont/F3/result_3" BEL
+        "cont/F3/result_2" BEL "cont/F3/result_1" BEL "cont/F3/result_0" BEL
+        "cont/ps_FSM_FFd1" BEL "cont/ps_FSM_FFd2" BEL "cont/ps_FSM_FFd3" BEL
+        "cont/ps_FSM_FFd4" BEL "cont/ps_FSM_FFd5" BEL "cont/ps_FSM_FFd6" BEL
+        "cont/ps_FSM_FFd7" BEL "cont/ps_FSM_FFd8" BEL "cont/ps_FSM_FFd9" BEL
+        "cont/ps_FSM_FFd3_1" BEL "cont/ps_FSM_FFd4_1" BEL "cont/ps_FSM_FFd1_1"
+        BEL "cont/ps_FSM_FFd2_1" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

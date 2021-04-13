@@ -1,0 +1,440 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Neuron_Network.ngc ...
+WARNING:NetListWriters:298 - No output is written to Neuron_Network.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus input_sel<9 : 0> on block Neuron_Network
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0018_PWR_6_o_MuLt_46_OUT1_Madd5_lut<7 : 2>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0002_PWR_6_o_MuLt_6_OUT1_Madd5_lut<5 : 2> on
+   block Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0012_PWR_6_o_MuLt_31_OUT1_Madd4_lut<6 : 4>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT1_Madd4_lut<6 : 4>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_PWR_6_o_PWR_6_o_MuLt_1_OUT_Madd_lut<9 : 2> on
+   block Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/max_func/GND_21_o_mac7[7]_mux_22_OUT<6 : 3> on block Neuron_Network is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/max_func/GND_21_o_mac2[7]_mux_7_OUT<6
+   : 0> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Neuron_Network.edif ...
+ngc2edif: Total memory usage is 120024 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design Neuron_Network.ngc ...
+WARNING:NetListWriters:298 - No output is written to Neuron_Network.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus input_sel<9 : 0> on block Neuron_Network
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0_weight<7 : 0> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0018_PWR_6_o_MuLt_46_OUT1_Madd5_lut<7 : 2>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0002_PWR_6_o_MuLt_6_OUT1_Madd5_lut<5 : 2> on
+   block Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0012_PWR_6_o_MuLt_31_OUT1_Madd4_lut<6 : 4>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT1_Madd4_lut<6 : 4>
+   on block Neuron_Network is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/hidden_weight_mem/Maddsub_PWR_6_o_PWR_6_o_MuLt_1_OUT_Madd_lut<9 : 2> on
+   block Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac9/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac8/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac7/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac6/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac5/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac4/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac3/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac2/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac1/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd28_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd13_cy<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/ADDERTREE_INTERNAL_Madd13_lut<14
+   : 1> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/mac0/bios_Mult/r37<3 : 1> on block
+   Neuron_Network is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   dp/max_func/GND_21_o_mac7[7]_mux_22_OUT<6 : 3> on block Neuron_Network is not
+   reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus dp/max_func/GND_21_o_mac2[7]_mux_7_OUT<6
+   : 0> on block Neuron_Network is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file Neuron_Network.edif ...
+ngc2edif: Total memory usage is 120024 kilobytes
+

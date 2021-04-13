@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Cad_project2" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/ANN_mymult C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|ANN_mymult.v/Contoller - Ip_controller</ClosedNode>
+         <ClosedNode>/ANN_mymult C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|ANN_mymult.v/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Controller C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Controller.v</ClosedNode>
+         <ClosedNode>/Datapath C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Datapath.v</ClosedNode>
+         <ClosedNode>/MAC C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|ANN_mymult.v/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/MAC C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC.v</ClosedNode>
+         <ClosedNode>/MAC C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC.v/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/MAC C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC.v/bios_Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Multiplier8 C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Multiplier8.v</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/cont - Controller</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac0 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac0 - MAC/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac0 - MAC/bios_Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac1 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac2 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac3 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac3 - MAC/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac3 - MAC/bios_Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac4 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac5 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac6 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac7 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac8 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v/dp - Datapath/mac9 - MAC</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Neuron_Network (C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Neuron_Network.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000203000000020000000000000000000000000200000064ffffffff000000810000000300000002000002030000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Neuron_Network (C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Neuron_Network.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000027d000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001b10000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Activation_func.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Synthesize - XST</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000123000000010000000100000000000000000000000064ffffffff000000810000000000000001000001230000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Synthesize - XST</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Controller_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Controller_TB.v</ClosedNode>
+         <ClosedNode>/Hidden_bios_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Hidden_bios_TB.v</ClosedNode>
+         <ClosedNode>/Hidden_weight_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Hidden_weight_TB.v</ClosedNode>
+         <ClosedNode>/Input_Mem_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Input_Mem_TB.v</ClosedNode>
+         <ClosedNode>/Ip_controller C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Ip_controller.v</ClosedNode>
+         <ClosedNode>/MAC C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC.v</ClosedNode>
+         <ClosedNode>/MAC_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC_TB.v/uut - MAC/Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/MAC_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|MAC_TB.v/uut - MAC/bios_Mult - Multiplier8</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/cont - Controller</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac0 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac1 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac2 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac3 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac4 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac5 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac6 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac7 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac8 - MAC</ClosedNode>
+         <ClosedNode>/NN_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|NN_TB.v/uut - Neuron_Network/dp - Datapath/mac9 - MAC</ClosedNode>
+         <ClosedNode>/Neuron_Network C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Neuron_Network.v</ClosedNode>
+         <ClosedNode>/Output_bios_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Output_bios_TB.v</ClosedNode>
+         <ClosedNode>/Output_weight_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Output_weight_TB.v</ClosedNode>
+         <ClosedNode>/Store_TB C:|Users|Alireza|Desktop|CAD_projects|Cad_project2|Store_TB.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>NN_TB (C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >13</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000217000000020000000000000000000000000200000064ffffffff000000810000000300000002000002170000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>NN_TB (C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000134000000010000000100000000000000000000000064ffffffff000000810000000000000001000001340000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+</Project>

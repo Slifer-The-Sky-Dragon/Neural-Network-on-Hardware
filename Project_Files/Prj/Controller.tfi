@@ -1,0 +1,31 @@
+
+
+
+// Instantiate the module
+Controller instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .up1_in(up1_in), 
+    .rst1_in(rst1_in), 
+    .up2_in(up2_in), 
+    .rst2_in(rst2_in), 
+    .up3_in(up3_in), 
+    .rst3_in(rst3_in), 
+    .input_sel(input_sel), 
+    .test_sel(test_sel), 
+    .HO_sel(HO_sel), 
+    .ld_Acc(ld_Acc), 
+    .rst_Acc(rst_Acc), 
+    .t(t), 
+    .ld_val(ld_val), 
+    .ld_Cor(ld_Cor), 
+    .rst_Cor(rst_Cor), 
+    .up1_out(up1_out), 
+    .rst1_out(rst1_out), 
+    .up2_out(up2_out), 
+    .rst2_out(rst2_out), 
+    .up3_out(up3_out), 
+    .rst3_out(rst3_out)
+    );
+
+

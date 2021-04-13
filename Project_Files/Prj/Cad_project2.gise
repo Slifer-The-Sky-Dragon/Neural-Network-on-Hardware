@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Cad_project2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Activation_func.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Activation_func.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Activation_func.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Activation_func_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Activation_func_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Comparator.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Comparator.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Comparator.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Comparator.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Controller.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Controller.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Controller.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Controller.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Controller_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Controller_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Counter.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Datapath.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Datapath.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Datapath.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Datapath.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Hidden_Bios_Memory.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Hidden_Weight_Memory.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Hidden_bios_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Hidden_bios_TB_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Hidden_weight_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Hidden_weight_TB_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Input_Mem_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Input_Mem_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Input_memory.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Input_memory.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Input_memory.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Input_memory.xst"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Label_Memory.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MAC.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MAC.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="MAC.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MAC.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MAC_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MAC_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="MAX_Func.tfi"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Multiplier8.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Multiplier8.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Multiplier8.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NN_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="NN_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="NN_TB_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="NN_TB_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Neuron_Network.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Neuron_Network.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Neuron_Network.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Neuron_Network.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Neuron_Network.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Neuron_Network.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Neuron_Network.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Neuron_Network.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Neuron_Network.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Neuron_Network.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Neuron_Network.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Neuron_Network.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Neuron_Network.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Neuron_Network.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Neuron_Network.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Neuron_Network.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Neuron_Network.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Neuron_Network.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Neuron_Network_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Neuron_Network_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Neuron_Network_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Neuron_Network_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Neuron_Network_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Neuron_Network_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Neuron_Network_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Neuron_Network_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Neuron_Network_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Neuron_Network_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Neuron_Network_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Neuron_Network_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Neuron_Network_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="One_Counter.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Output_Bios_Memory.tfi"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Output_Weight_Memory.tfi"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Output_bios_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Output_bios_TB_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Output_weight_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Output_weight_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register_21.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Register_21.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Register_21.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Signed_Adder.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Signed_Adder.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Signed_Adder.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Store_Regs.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Store_Regs.stx"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="Store_Regs.tfi"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Store_Regs.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Store_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Store_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1611311531" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1611311531">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611333558" xil_pn:in_ck="-8765139940243335577" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1611333558">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Activation_func.v"/>
+      <outfile xil_pn:name="Comparator.v"/>
+      <outfile xil_pn:name="Controller.v"/>
+      <outfile xil_pn:name="Controller_TB.v"/>
+      <outfile xil_pn:name="Counter.v"/>
+      <outfile xil_pn:name="Datapath.v"/>
+      <outfile xil_pn:name="Hidden_Bios_Memory.v"/>
+      <outfile xil_pn:name="Hidden_Weight_Memory.v"/>
+      <outfile xil_pn:name="Hidden_bios_TB.v"/>
+      <outfile xil_pn:name="Hidden_weight_TB.v"/>
+      <outfile xil_pn:name="Input_Mem_TB.v"/>
+      <outfile xil_pn:name="Input_memory.v"/>
+      <outfile xil_pn:name="Label_Memory.v"/>
+      <outfile xil_pn:name="MAC.v"/>
+      <outfile xil_pn:name="MAC_TB.v"/>
+      <outfile xil_pn:name="MAX_Func.v"/>
+      <outfile xil_pn:name="Multiplier8.v"/>
+      <outfile xil_pn:name="Multiplier_2.v"/>
+      <outfile xil_pn:name="NN_TB.v"/>
+      <outfile xil_pn:name="Neuron_Network.v"/>
+      <outfile xil_pn:name="One_Counter.v"/>
+      <outfile xil_pn:name="Output_Bios_Memory.v"/>
+      <outfile xil_pn:name="Output_Weight_Memory.v"/>
+      <outfile xil_pn:name="Output_bios_TB.v"/>
+      <outfile xil_pn:name="Output_weight_TB.v"/>
+      <outfile xil_pn:name="Register_21.v"/>
+      <outfile xil_pn:name="Signed_Adder.v"/>
+      <outfile xil_pn:name="Store_Regs.v"/>
+      <outfile xil_pn:name="Store_TB.v"/>
+      <outfile xil_pn:name="Unsigned_Adder_4.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311552" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4432060192833585112" xil_pn:start_ts="1611311552">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311552" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8724048811501991352" xil_pn:start_ts="1611311552">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311552" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-7313554232891837643" xil_pn:start_ts="1611311552">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611333122" xil_pn:in_ck="-8765139940243335577" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1611333122">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Activation_func.v"/>
+      <outfile xil_pn:name="Comparator.v"/>
+      <outfile xil_pn:name="Controller.v"/>
+      <outfile xil_pn:name="Controller_TB.v"/>
+      <outfile xil_pn:name="Counter.v"/>
+      <outfile xil_pn:name="Datapath.v"/>
+      <outfile xil_pn:name="Hidden_Bios_Memory.v"/>
+      <outfile xil_pn:name="Hidden_Weight_Memory.v"/>
+      <outfile xil_pn:name="Hidden_bios_TB.v"/>
+      <outfile xil_pn:name="Hidden_weight_TB.v"/>
+      <outfile xil_pn:name="Input_Mem_TB.v"/>
+      <outfile xil_pn:name="Input_memory.v"/>
+      <outfile xil_pn:name="Label_Memory.v"/>
+      <outfile xil_pn:name="MAC.v"/>
+      <outfile xil_pn:name="MAC_TB.v"/>
+      <outfile xil_pn:name="MAX_Func.v"/>
+      <outfile xil_pn:name="Multiplier8.v"/>
+      <outfile xil_pn:name="Multiplier_2.v"/>
+      <outfile xil_pn:name="NN_TB.v"/>
+      <outfile xil_pn:name="Neuron_Network.v"/>
+      <outfile xil_pn:name="One_Counter.v"/>
+      <outfile xil_pn:name="Output_Bios_Memory.v"/>
+      <outfile xil_pn:name="Output_Weight_Memory.v"/>
+      <outfile xil_pn:name="Output_bios_TB.v"/>
+      <outfile xil_pn:name="Output_weight_TB.v"/>
+      <outfile xil_pn:name="Register_21.v"/>
+      <outfile xil_pn:name="Signed_Adder.v"/>
+      <outfile xil_pn:name="Store_Regs.v"/>
+      <outfile xil_pn:name="Store_TB.v"/>
+      <outfile xil_pn:name="Unsigned_Adder_4.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1611333131" xil_pn:in_ck="-8765139940243335577" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6494518325194862216" xil_pn:start_ts="1611333122">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="NN_TB_beh.prj"/>
+      <outfile xil_pn:name="NN_TB_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1611333132" xil_pn:in_ck="4324483309840559388" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5630904674980475781" xil_pn:start_ts="1611333131">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="NN_TB_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1611311223">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="334901740516358343" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7313554232891837643" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2029366147122022007" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-2777237817060198042" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611311224" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5153810706166102401" xil_pn:start_ts="1611311224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611343269" xil_pn:in_ck="3262058822625786362" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="5840327498171717547" xil_pn:start_ts="1611333567">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Neuron_Network.lso"/>
+      <outfile xil_pn:name="Neuron_Network.ngc"/>
+      <outfile xil_pn:name="Neuron_Network.ngr"/>
+      <outfile xil_pn:name="Neuron_Network.prj"/>
+      <outfile xil_pn:name="Neuron_Network.stx"/>
+      <outfile xil_pn:name="Neuron_Network.syr"/>
+      <outfile xil_pn:name="Neuron_Network.xst"/>
+      <outfile xil_pn:name="Neuron_Network_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1611326495" xil_pn:in_ck="4652710403616015340" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4285108317391056546" xil_pn:start_ts="1611326495">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611343309" xil_pn:in_ck="-780393344184109038" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1993798064627558111" xil_pn:start_ts="1611343279">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Neuron_Network.bld"/>
+      <outfile xil_pn:name="Neuron_Network.ngd"/>
+      <outfile xil_pn:name="Neuron_Network_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611343817" xil_pn:in_ck="2400382627005472339" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-7406072446961783193" xil_pn:start_ts="1611343309">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Neuron_Network.pcf"/>
+      <outfile xil_pn:name="Neuron_Network_map.map"/>
+      <outfile xil_pn:name="Neuron_Network_map.mrp"/>
+      <outfile xil_pn:name="Neuron_Network_map.ncd"/>
+      <outfile xil_pn:name="Neuron_Network_map.ngm"/>
+      <outfile xil_pn:name="Neuron_Network_map.xrpt"/>
+      <outfile xil_pn:name="Neuron_Network_summary.xml"/>
+      <outfile xil_pn:name="Neuron_Network_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611345313" xil_pn:in_ck="-2944992785506742740" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-1363772850685286664" xil_pn:start_ts="1611343817">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Neuron_Network.ncd"/>
+      <outfile xil_pn:name="Neuron_Network.par"/>
+      <outfile xil_pn:name="Neuron_Network.ptwx"/>
+      <outfile xil_pn:name="Neuron_Network.unroutes"/>
+      <outfile xil_pn:name="Neuron_Network.xpi"/>
+      <outfile xil_pn:name="Neuron_Network_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611345457" xil_pn:in_ck="6813068125300417743" xil_pn:name="TRAN_fpgaFloorplanPostPAR" xil_pn:start_ts="1611345454">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611345652" xil_pn:in_ck="4652710403616007715" xil_pn:name="TRAN_XPower_virtex6" xil_pn:prop_ck="762063245918354003" xil_pn:start_ts="1611345652">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1611345313" xil_pn:in_ck="6813068125300417743" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1611345167">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Neuron_Network.twr"/>
+      <outfile xil_pn:name="Neuron_Network.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1611345412" xil_pn:in_ck="2400382627005472339" xil_pn:name="TRAN_createTimingConstraints" xil_pn:start_ts="1611345408">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

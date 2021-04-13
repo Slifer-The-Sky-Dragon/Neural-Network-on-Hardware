@@ -1,0 +1,1154 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE-App\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml Neuron_Network.twx Neuron_Network.ncd -o
+Neuron_Network.twr Neuron_Network.pcf -ucf Neuron_Network.ucf
+
+Design file:              Neuron_Network.ncd
+Physical constraint file: Neuron_Network.pcf
+Device,package,speed:     xc6vcx75t,ff484,C,-2 (PRODUCTION 1.11 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 739500445605972 paths analyzed, 2942 endpoints analyzed, 1263 failing endpoints
+ 1263 timing errors detected. (1263 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  28.011ns.
+--------------------------------------------------------------------------------
+
+Paths for end point dp/mac0/Acc_reg/b_17 (SLICE_X87Y119.C2), 66980133360 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -8.011ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac0/Acc_reg/b_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.889ns (Levels of Logic = 24)
+  Clock Path Skew:      -0.087ns (1.479 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac0/Acc_reg/b_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y82.D6      net (fanout=80)       0.210   dp/macs_input_val<0>
+    SLICE_X60Y82.D       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X93Y111.A4     net (fanout=1)        2.357   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X93Y111.AMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.B4     net (fanout=2)        0.425   dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.BQ     Tad_logic             0.566   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X92Y112.C6     net (fanout=2)        0.360   dp/mac0/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X92Y112.CMUX   Topcc                 0.361   dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X91Y115.C4     net (fanout=1)        0.693   dp/mac0/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X91Y115.CMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.D3     net (fanout=2)        0.474   dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.DQ     Tad_logic             0.582   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X89Y117.D6     net (fanout=7)        0.483   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X89Y117.COUT   Topcyd                0.328   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_lut<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.COUT   Tbyp                  0.078   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.BMUX   Tcinb                 0.273   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<19>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_xor<19>
+    SLICE_X87Y119.C2     net (fanout=1)        0.875   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<17>
+    SLICE_X87Y119.CLK    Tas                   0.082   dp/mac0/Acc_reg/b<17>
+                                                       dp/mac0/Adder/Mmux_result91
+                                                       dp/mac0/Acc_reg/b_17
+    -------------------------------------------------  ---------------------------
+    Total                                     27.889ns (9.039ns logic, 18.850ns route)
+                                                       (32.4% logic, 67.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -8.001ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac0/Acc_reg/b_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.879ns (Levels of Logic = 24)
+  Clock Path Skew:      -0.087ns (1.479 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac0/Acc_reg/b_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P0       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.A6      net (fanout=2)        1.262   dp/input_mem/n0008<0>
+    SLICE_X38Y51.COUT    Topcya                0.418   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<0>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y82.D6      net (fanout=80)       0.210   dp/macs_input_val<0>
+    SLICE_X60Y82.D       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X93Y111.A4     net (fanout=1)        2.357   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X93Y111.AMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.B4     net (fanout=2)        0.425   dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.BQ     Tad_logic             0.566   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X92Y112.C6     net (fanout=2)        0.360   dp/mac0/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X92Y112.CMUX   Topcc                 0.361   dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X91Y115.C4     net (fanout=1)        0.693   dp/mac0/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X91Y115.CMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.D3     net (fanout=2)        0.474   dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.DQ     Tad_logic             0.582   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X89Y117.D6     net (fanout=7)        0.483   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X89Y117.COUT   Topcyd                0.328   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_lut<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.COUT   Tbyp                  0.078   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.BMUX   Tcinb                 0.273   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<19>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_xor<19>
+    SLICE_X87Y119.C2     net (fanout=1)        0.875   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<17>
+    SLICE_X87Y119.CLK    Tas                   0.082   dp/mac0/Acc_reg/b<17>
+                                                       dp/mac0/Adder/Mmux_result91
+                                                       dp/mac0/Acc_reg/b_17
+    -------------------------------------------------  ---------------------------
+    Total                                     27.879ns (9.044ns logic, 18.835ns route)
+                                                       (32.4% logic, 67.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.971ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac0/Acc_reg/b_17 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.849ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.087ns (1.479 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac0/Acc_reg/b_17
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.DMUX    Tcind                 0.316   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    DSP48_X2Y25.A11      net (fanout=1)        0.826   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<11>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y82.D6      net (fanout=80)       0.210   dp/macs_input_val<0>
+    SLICE_X60Y82.D       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X93Y111.A4     net (fanout=1)        2.357   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X93Y111.AMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.B4     net (fanout=2)        0.425   dp/mac0/ADDERTREE_INTERNAL_Madd241
+    SLICE_X93Y111.BQ     Tad_logic             0.566   dp/mac0/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X92Y112.C6     net (fanout=2)        0.360   dp/mac0/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X92Y112.CMUX   Topcc                 0.361   dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X91Y115.C4     net (fanout=1)        0.693   dp/mac0/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X91Y115.CMUX   Tilo                  0.196   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.D3     net (fanout=2)        0.474   dp/mac0/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X91Y115.DQ     Tad_logic             0.582   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac0/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X89Y117.D6     net (fanout=7)        0.483   dp/mac0/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X89Y117.COUT   Topcyd                0.328   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_lut<11>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<11>
+    SLICE_X89Y118.COUT   Tbyp                  0.078   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.CIN    net (fanout=1)        0.000   dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>
+    SLICE_X89Y119.BMUX   Tcinb                 0.273   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<19>
+                                                       dp/mac0/Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_xor<19>
+    SLICE_X87Y119.C2     net (fanout=1)        0.875   dp/mac0/Adder/val_b[19]_val_a[19]_sub_9_OUT<17>
+    SLICE_X87Y119.CLK    Tas                   0.082   dp/mac0/Acc_reg/b<17>
+                                                       dp/mac0/Adder/Mmux_result91
+                                                       dp/mac0/Acc_reg/b_17
+    -------------------------------------------------  ---------------------------
+    Total                                     27.849ns (9.001ns logic, 18.848ns route)
+                                                       (32.3% logic, 67.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point dp/mac1/Acc_reg/b_2 (SLICE_X91Y102.D6), 268038902780 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -8.001ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.873ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.609   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lut<5>
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.D6     net (fanout=20)       0.557   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.079   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result141
+                                                       dp/mac1/Acc_reg/b_2
+    -------------------------------------------------  ---------------------------
+    Total                                     27.873ns (9.046ns logic, 18.827ns route)
+                                                       (32.5% logic, 67.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.991ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.863ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P0       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.A6      net (fanout=2)        1.262   dp/input_mem/n0008<0>
+    SLICE_X38Y51.COUT    Topcya                0.418   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<0>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.609   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lut<5>
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.D6     net (fanout=20)       0.557   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.079   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result141
+                                                       dp/mac1/Acc_reg/b_2
+    -------------------------------------------------  ---------------------------
+    Total                                     27.863ns (9.051ns logic, 18.812ns route)
+                                                       (32.5% logic, 67.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.975ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.847ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.583   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lutdi5
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.D6     net (fanout=20)       0.557   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.079   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result141
+                                                       dp/mac1/Acc_reg/b_2
+    -------------------------------------------------  ---------------------------
+    Total                                     27.847ns (9.020ns logic, 18.827ns route)
+                                                       (32.4% logic, 67.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point dp/mac1/Acc_reg/b_7 (SLICE_X91Y102.A6), 268038902780 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.997ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.869ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.609   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lut<5>
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.A6     net (fanout=20)       0.550   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.082   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result191
+                                                       dp/mac1/Acc_reg/b_7
+    -------------------------------------------------  ---------------------------
+    Total                                     27.869ns (9.049ns logic, 18.820ns route)
+                                                       (32.5% logic, 67.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.987ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.859ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P0       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.A6      net (fanout=2)        1.262   dp/input_mem/n0008<0>
+    SLICE_X38Y51.COUT    Topcya                0.418   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<0>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.609   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lut<5>
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.A6     net (fanout=20)       0.550   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.082   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result191
+                                                       dp/mac1/Acc_reg/b_7
+    -------------------------------------------------  ---------------------------
+    Total                                     27.859ns (9.054ns logic, 18.805ns route)
+                                                       (32.5% logic, 67.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -7.971ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               cont/F1/result_1 (FF)
+  Destination:          dp/mac1/Acc_reg/b_7 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      27.843ns (Levels of Logic = 23)
+  Clock Path Skew:      -0.093ns (1.473 - 1.566)
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: cont/F1/result_1 to dp/mac1/Acc_reg/b_7
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X29Y72.CMUX    Tshcko                0.420   cont/F1/result<0>
+                                                       cont/F1/result_1
+    SLICE_X30Y72.B4      net (fanout=8)        0.433   cont/F1/result<1>
+    SLICE_X30Y72.COUT    Topcyb                0.413   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_lut<1>_INV_0
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<3>
+    SLICE_X30Y73.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<7>
+    SLICE_X30Y74.COUT    Tbyp                  0.078   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.CIN     net (fanout=1)        0.000   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<11>
+    SLICE_X30Y75.BMUX    Tcinb                 0.276   dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+                                                       dp/input_mem/Msub_test_sel[31]_GND_3_o_sub_1_OUT_cy<15>
+    DSP48_X2Y25.A13      net (fanout=1)        0.828   dp/input_mem/test_sel[31]_GND_3_o_sub_1_OUT<13>
+    DSP48_X2Y25.P1       Tdspdo_A_P_MULT       3.826   dp/input_mem/Mmult_n0008
+                                                       dp/input_mem/Mmult_n0008
+    SLICE_X38Y51.B6      net (fanout=2)        1.277   dp/input_mem/n0008<1>
+    SLICE_X38Y51.COUT    Topcyb                0.413   dp/input_mem/Madd_n0009_Madd_cy<3>
+                                                       dp/input_mem/Madd_n0009_Madd_lut<1>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.CIN     net (fanout=1)        0.000   dp/input_mem/Madd_n0009_Madd_cy<3>
+    SLICE_X38Y52.BMUX    Tcinb                 0.273   dp/input_mem/Madd_n0009_Madd_cy<7>
+                                                       dp/input_mem/Madd_n0009_Madd_cy<7>
+    SLICE_X15Y26.A2      net (fanout=5803)     2.577   dp/input_mem/n0009<5>
+    SLICE_X15Y26.A       Tilo                  0.075   dp_input_mem/Mram_input_mem336
+                                                       dp_input_mem/Mram_input_mem44210
+    SLICE_X33Y38.C6      net (fanout=1)        1.417   dp_input_mem/Mram_input_mem442
+    SLICE_X33Y38.C       Tilo                  0.075   dp_input_mem/Mram_input_mem440
+                                                       dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A6      net (fanout=1)        0.714   dp_input_mem/Mram_input_mem7271_2314
+    SLICE_X25Y35.A       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2230
+                                                       dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A6       net (fanout=1)        1.163   dp_input_mem/Mram_input_mem7271_183
+    SLICE_X5Y28.A        Tilo                  0.075   dp_input_mem/Mram_input_mem7271_2116
+                                                       dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C6      net (fanout=1)        0.858   dp_input_mem/Mram_input_mem7271_122
+    SLICE_X19Y24.C       Tilo                  0.075   dp_input_mem/Mram_input_mem7271_112
+                                                       dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A5      net (fanout=1)        3.307   dp_input_mem/Mram_input_mem7271_7
+    SLICE_X60Y82.A       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp_input_mem/n0009<15>8
+    SLICE_X60Y82.B3      net (fanout=81)       0.399   dp/input_mem_val<0>
+    SLICE_X60Y82.B       Tilo                  0.075   dp/mac0/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/Mmux_macs_input_val11
+    SLICE_X60Y84.D5      net (fanout=80)       0.428   dp/macs_input_val<0>
+    SLICE_X60Y84.D       Tilo                  0.075   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_9221
+    SLICE_X98Y99.A5      net (fanout=1)        2.099   dp/mac1/ADDERTREE_INTERNAL_Madd_922
+    SLICE_X98Y99.AMUX    Tilo                  0.203   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.B4      net (fanout=2)        0.430   dp/mac1/ADDERTREE_INTERNAL_Madd241
+    SLICE_X98Y99.BQ      Tad_logic             0.566   dp/mac1/ADDERTREE_INTERNAL_Madd_1126
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_lut<0>10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd24_cy<0>_11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1024_rt
+    SLICE_X99Y100.C6     net (fanout=2)        0.390   dp/mac1/ADDERTREE_INTERNAL_Madd_1024
+    SLICE_X99Y100.CMUX   Topcc                 0.359   dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_lut<10>
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd28_cy<11>
+    SLICE_X97Y101.C4     net (fanout=1)        0.519   dp/mac1/ADDERTREE_INTERNAL_Madd_1028
+    SLICE_X97Y101.CMUX   Tilo                  0.196   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.D3     net (fanout=2)        0.473   dp/mac1/ADDERTREE_INTERNAL_Madd2910
+    SLICE_X97Y101.DQ     Tad_logic             0.582   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_lut<0>11
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd29_cy<0>_10
+                                                       dp/mac1/ADDERTREE_INTERNAL_Madd_1131_rt
+    SLICE_X96Y102.B5     net (fanout=7)        0.461   dp/mac1/ADDERTREE_INTERNAL_Madd_1131
+    SLICE_X96Y102.DMUX   Topbd                 0.583   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_lutdi5
+                                                       dp/mac1/Adder/Mcompar_val_a[19]_val_b[19]_LessThan_8_o_cy<7>
+    SLICE_X92Y103.C6     net (fanout=3)        0.497   dp/mac1/Adder/val_a[19]_val_b[19]_LessThan_8_o
+    SLICE_X92Y103.C      Tilo                  0.075   dp/mac1/Acc_reg/b<11>
+                                                       dp/mac1/Adder/Mmux_result1111
+    SLICE_X91Y102.A6     net (fanout=20)       0.550   dp/mac1/Adder/Mmux_result111
+    SLICE_X91Y102.CLK    Tas                   0.082   dp/mac1/Acc_reg/b<2>
+                                                       dp/mac1/Adder/Mmux_result191
+                                                       dp/mac1/Acc_reg/b_7
+    -------------------------------------------------  ---------------------------
+    Total                                     27.843ns (9.023ns logic, 18.820ns route)
+                                                       (32.4% logic, 67.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point dp/one_counter/w_9 (SLICE_X37Y80.C6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.134ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               dp/one_counter/w_9 (FF)
+  Destination:          dp/one_counter/w_9 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.134ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: dp/one_counter/w_9 to dp/one_counter/w_9
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y80.CQ      Tcko                  0.098   dp/one_counter/w<10>
+                                                       dp/one_counter/w_9
+    SLICE_X37Y80.C6      net (fanout=4)        0.092   dp/one_counter/w<9>
+    SLICE_X37Y80.CLK     Tah         (-Th)     0.056   dp/one_counter/w<10>
+                                                       dp/one_counter/w_9_dpot
+                                                       dp/one_counter/w_9
+    -------------------------------------------------  ---------------------------
+    Total                                      0.134ns (0.042ns logic, 0.092ns route)
+                                                       (31.3% logic, 68.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point dp/one_counter/w_10 (SLICE_X37Y80.D4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.137ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               dp/one_counter/w_10 (FF)
+  Destination:          dp/one_counter/w_10 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.137ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: dp/one_counter/w_10 to dp/one_counter/w_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y80.DQ      Tcko                  0.098   dp/one_counter/w<10>
+                                                       dp/one_counter/w_10
+    SLICE_X37Y80.D4      net (fanout=4)        0.096   dp/one_counter/w<10>
+    SLICE_X37Y80.CLK     Tah         (-Th)     0.057   dp/one_counter/w<10>
+                                                       dp/one_counter/w_10_dpot
+                                                       dp/one_counter/w_10
+    -------------------------------------------------  ---------------------------
+    Total                                      0.137ns (0.041ns logic, 0.096ns route)
+                                                       (29.9% logic, 70.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point dp/one_counter/w_8 (SLICE_X37Y80.B4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.138ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               dp/one_counter/w_8 (FF)
+  Destination:          dp/one_counter/w_8 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.138ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 20.000ns
+  Destination Clock:    clk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: dp/one_counter/w_8 to dp/one_counter/w_8
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y80.BQ      Tcko                  0.098   dp/one_counter/w<10>
+                                                       dp/one_counter/w_8
+    SLICE_X37Y80.B4      net (fanout=4)        0.097   dp/one_counter/w<8>
+    SLICE_X37Y80.CLK     Tah         (-Th)     0.057   dp/one_counter/w<10>
+                                                       dp/one_counter/w_8_dpot
+                                                       dp/one_counter/w_8
+    -------------------------------------------------  ---------------------------
+    Total                                      0.138ns (0.041ns logic, 0.097ns route)
+                                                       (29.7% logic, 70.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.571ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.429ns (699.790MHz) (Tbcper_I)
+  Physical resource: clk_BUFGP/BUFG/I0
+  Logical resource: clk_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 19.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: cont/F1/result<0>/SR
+  Logical resource: cont/F1/result_1/SR
+  Location pin: SLICE_X29Y72.SR
+  Clock network: cont/ps_FSM_FFd10
+--------------------------------------------------------------------------------
+Slack: 19.168ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.416ns (Trpw)
+  Physical resource: cont/F1/result<0>/SR
+  Logical resource: cont/F1/result_0/SR
+  Location pin: SLICE_X29Y72.SR
+  Clock network: cont/ps_FSM_FFd10
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   28.011|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 1263  Score: 7510243  (Setup/Max: 7510243, Hold: 0)
+
+Constraints cover 739500445605972 paths, 0 nets, and 82196 connections
+
+Design statistics:
+   Minimum period:  28.011ns{1}   (Maximum frequency:  35.700MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Fri Jan 22 23:25:10 2021 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 641 MB
+
+
+

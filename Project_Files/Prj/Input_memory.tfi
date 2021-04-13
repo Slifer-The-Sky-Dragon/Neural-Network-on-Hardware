@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+Input_memory instance_name (
+    .input_sel(input_sel), 
+    .test_sel(test_sel), 
+    .result(result)
+    );
+
+

@@ -1,0 +1,61 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB_isim_beh.exe" -prj "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB_beh.prj" "work.NN_TB" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Unsigned_Adder_4.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Multiplier_2.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Signed_Adder.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Register_21.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Multiplier8.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Activation_func.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Store_Regs.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Output_Weight_Memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Output_Bios_Memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/One_Counter.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/MAX_Func.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/MAC.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Label_Memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Input_memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Hidden_Weight_Memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Hidden_Bios_Memory.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Counter.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Comparator.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Datapath.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Controller.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Neuron_Network.v" into library work
+Analyzing Verilog file "C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB.v" into library work
+Analyzing Verilog file "D:/ISE-App/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module Input_memory
+Compiling module Label_Memory
+Compiling module Hidden_Weight_Memory
+Compiling module Output_Weight_Memory
+Compiling module Hidden_Bios_Memory
+Compiling module Output_Bios_Memory
+Compiling module Multiplier2
+Compiling module Unsigned_Adder_4
+Compiling module Multiplier8
+Compiling module Signed_Adder
+Compiling module Register_21
+Compiling module Activation_func
+Compiling module MAC
+Compiling module Store_Regs
+Compiling module MAX_Func
+Compiling module Comparator
+Compiling module One_Counter
+Compiling module Datapath
+Compiling module Counter(N=751)
+Compiling module Counter(N=62)
+Compiling module Counter(N=20)
+Compiling module Controller
+Compiling module Neuron_Network
+Compiling module NN_TB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 22 sub-compilation(s) to finish...
+Compiled 25 Verilog Units
+Built simulation executable C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/NN_TB_isim_beh.exe
+Fuse Memory Usage: 28452 KB
+Fuse CPU Usage: 1154 ms

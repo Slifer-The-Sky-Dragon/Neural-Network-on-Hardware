@@ -1,0 +1,90 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: Datapath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Unsigned_Adder_4.v" into library work
+Parsing module <Unsigned_Adder_4>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier_2.v" into library work
+Parsing module <Multiplier2>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Signed_Adder.v" into library work
+Parsing module <Signed_Adder>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Register_21.v" into library work
+Parsing module <Register_21>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier8.v" into library work
+Parsing module <Multiplier8>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Activation_func.v" into library work
+Parsing module <Activation_func>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Store_Regs.v" into library work
+Parsing module <Store_Regs>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Weight_Memory.v" into library work
+Parsing module <Output_Weight_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Bios_Memory.v" into library work
+Parsing module <Output_Bios_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\One_Counter.v" into library work
+Parsing module <One_Counter>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAX_Func.v" into library work
+Parsing module <MAX_Func>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAC.v" into library work
+Parsing module <MAC>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Label_Memory.v" into library work
+Parsing module <Label_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Input_memory.v" into library work
+Parsing module <Input_memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Weight_Memory.v" into library work
+Parsing module <Hidden_Weight_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Bios_Memory.v" into library work
+Parsing module <Hidden_Bios_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Comparator.v" into library work
+Parsing module <Comparator>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Datapath.v" into library work
+Parsing module <Datapath>.
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.59 secs
+ 
+--> 
+
+Total memory usage is 202148 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

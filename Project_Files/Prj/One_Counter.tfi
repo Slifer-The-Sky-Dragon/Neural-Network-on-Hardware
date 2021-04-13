@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+One_Counter instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .a(a), 
+    .ld(ld), 
+    .w(w)
+    );
+
+

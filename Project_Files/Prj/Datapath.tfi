@@ -1,0 +1,20 @@
+
+
+
+// Instantiate the module
+Datapath instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .input_sel(input_sel), 
+    .test_sel(test_sel), 
+    .HO_sel(HO_sel), 
+    .ld_Acc(ld_Acc), 
+    .rst_Acc(rst_Acc), 
+    .t(t), 
+    .ld_val(ld_val), 
+    .ld_Cor(ld_Cor), 
+    .rst_Cor(rst_Cor), 
+    .calculated_class(calculated_class)
+    );
+
+

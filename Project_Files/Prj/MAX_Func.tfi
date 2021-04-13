@@ -1,0 +1,19 @@
+
+
+
+// Instantiate the module
+MAX_Func instance_name (
+    .mac0(mac0), 
+    .mac1(mac1), 
+    .mac2(mac2), 
+    .mac3(mac3), 
+    .mac4(mac4), 
+    .mac5(mac5), 
+    .mac6(mac6), 
+    .mac7(mac7), 
+    .mac8(mac8), 
+    .mac9(mac9), 
+    .calculated_class(calculated_class)
+    );
+
+

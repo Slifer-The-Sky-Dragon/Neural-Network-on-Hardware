@@ -1,0 +1,1491 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.24 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: Neuron_Network.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Neuron_Network.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Neuron_Network"
+Output Format                      : NGC
+Target Device                      : xc6vcx75t-2-ff484
+
+---- Source Options
+Top Module Name                    : Neuron_Network
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Unsigned_Adder_4.v" into library work
+Parsing module <Unsigned_Adder_4>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier_2.v" into library work
+Parsing module <Multiplier2>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Signed_Adder.v" into library work
+Parsing module <Signed_Adder>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Register_21.v" into library work
+Parsing module <Register_21>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier8.v" into library work
+Parsing module <Multiplier8>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Activation_func.v" into library work
+Parsing module <Activation_func>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Store_Regs.v" into library work
+Parsing module <Store_Regs>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Weight_Memory.v" into library work
+Parsing module <Output_Weight_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Bios_Memory.v" into library work
+Parsing module <Output_Bios_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\One_Counter.v" into library work
+Parsing module <One_Counter>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAX_Func.v" into library work
+Parsing module <MAX_Func>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAC.v" into library work
+Parsing module <MAC>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Label_Memory.v" into library work
+Parsing module <Label_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Input_memory.v" into library work
+Parsing module <Input_memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Weight_Memory.v" into library work
+Parsing module <Hidden_Weight_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Bios_Memory.v" into library work
+Parsing module <Hidden_Bios_Memory>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Counter.v" into library work
+Parsing module <Counter>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Comparator.v" into library work
+Parsing module <Comparator>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Datapath.v" into library work
+Parsing module <Datapath>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Controller.v" into library work
+Parsing module <Controller>.
+Analyzing Verilog file "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Neuron_Network.v" into library work
+Parsing module <Neuron_Network>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Neuron_Network>.
+
+Elaborating module <Datapath>.
+
+Elaborating module <Input_memory>.
+Reading initialization file \"test_data_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Input_memory.v" Line 26: Signal <input_mem> in initial block is partially initialized.
+
+Elaborating module <Label_Memory>.
+Reading initialization file \"test_lable_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Label_Memory.v" Line 27: Signal <label_mem> in initial block is partially initialized.
+
+Elaborating module <Hidden_Weight_Memory>.
+Reading initialization file \"w1_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Weight_Memory.v" Line 28: Signal <weight_mem> in initial block is partially initialized.
+
+Elaborating module <Output_Weight_Memory>.
+Reading initialization file \"w2_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Weight_Memory.v" Line 27: Signal <weight_mem> in initial block is partially initialized.
+
+Elaborating module <Hidden_Bios_Memory>.
+Reading initialization file \"bh_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Bios_Memory.v" Line 27: Signal <bios_mem> in initial block is partially initialized.
+
+Elaborating module <Output_Bios_Memory>.
+Reading initialization file \"bo_sm.dat\".
+WARNING:HDLCompiler:1670 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Bios_Memory.v" Line 26: Signal <bios_mem> in initial block is partially initialized.
+WARNING:HDLCompiler:872 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Bios_Memory.v" Line 25: Using initial value of bios_mem since it is never assigned
+
+Elaborating module <MAC>.
+
+Elaborating module <Multiplier8>.
+
+Elaborating module <Multiplier2>.
+
+Elaborating module <Unsigned_Adder_4>.
+
+Elaborating module <Signed_Adder>.
+
+Elaborating module <Register_21>.
+
+Elaborating module <Activation_func>.
+
+Elaborating module <Store_Regs>.
+
+Elaborating module <MAX_Func>.
+
+Elaborating module <Comparator>.
+
+Elaborating module <One_Counter>.
+WARNING:HDLCompiler:413 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\One_Counter.v" Line 30: Result of 12-bit expression is truncated to fit in 11-bit target.
+
+Elaborating module <Controller>.
+
+Elaborating module <Counter(N=751)>.
+
+Elaborating module <Counter(N=62)>.
+
+Elaborating module <Counter(N=20)>.
+WARNING:HDLCompiler:1127 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Neuron_Network.v" Line 81: Assignment to done ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Neuron_Network>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Neuron_Network.v".
+INFO:Xst:3210 - "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Neuron_Network.v" line 57: Output port <done> of the instance <cont> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Neuron_Network> synthesized.
+
+Synthesizing Unit <Datapath>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Datapath.v".
+    Summary:
+	inferred  22 Multiplexer(s).
+Unit <Datapath> synthesized.
+
+Synthesizing Unit <Input_memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Input_memory.v".
+WARNING:Xst:2999 - Signal 'input_mem', unconnected in block 'Input_memory', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <input_mem>, simulation mismatch.
+    Found 46501x8-bit single-port Read Only RAM <Mram_input_mem> for signal <input_mem>.
+    Found 32-bit subtractor for signal <test_sel[31]_GND_3_o_sub_1_OUT> created at line 29.
+    Found 32-bit adder for signal <n0009> created at line 29.
+    Found 32x6-bit multiplier for signal <n0008> created at line 29.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <Input_memory> synthesized.
+
+Synthesizing Unit <Label_Memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Label_Memory.v".
+WARNING:Xst:2999 - Signal 'label_mem', unconnected in block 'Label_Memory', is tied to its initial value.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <label_mem>, simulation mismatch.
+    Found 751x8-bit single-port Read Only RAM <Mram_label_mem> for signal <label_mem>.
+    Found 10-bit subtractor for signal <test_sel[31]_GND_5_o_sub_1_OUT<9:0>> created at line 30.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Label_Memory> synthesized.
+
+Synthesizing Unit <Hidden_Weight_Memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Weight_Memory.v".
+WARNING:Xst:2999 - Signal 'weight_mem', unconnected in block 'Hidden_Weight_Memory', is tied to its initial value.
+    Found 32-bit adder for signal <n0053> created at line 31.
+    Found 6-bit adder for signal <n0082> created at line 32.
+    Found 32-bit adder for signal <n0056> created at line 32.
+    Found 6-bit adder for signal <n0084> created at line 33.
+    Found 32-bit adder for signal <n0059> created at line 33.
+    Found 6-bit adder for signal <n0086> created at line 34.
+    Found 32-bit adder for signal <n0062> created at line 34.
+    Found 6-bit adder for signal <n0088> created at line 35.
+    Found 32-bit adder for signal <n0065> created at line 35.
+    Found 6-bit adder for signal <n0090> created at line 36.
+    Found 32-bit adder for signal <n0068> created at line 36.
+    Found 6-bit adder for signal <n0092> created at line 37.
+    Found 32-bit adder for signal <n0071> created at line 37.
+    Found 6-bit adder for signal <n0094> created at line 38.
+    Found 32-bit adder for signal <n0074> created at line 38.
+    Found 6-bit adder for signal <n0096> created at line 39.
+    Found 32-bit adder for signal <n0077> created at line 39.
+    Found 6-bit adder for signal <n0098> created at line 40.
+    Found 32-bit adder for signal <n0080> created at line 40.
+    Found 4x1-bit multiplier for signal <PWR_6_o_t_MuLt_0_OUT> created at line 31.
+    Found 5x6-bit multiplier for signal <PWR_6_o_PWR_6_o_MuLt_1_OUT> created at line 31.
+    Found 6x6-bit multiplier for signal <BUS_0002_PWR_6_o_MuLt_6_OUT> created at line 32.
+    Found 6x6-bit multiplier for signal <BUS_0004_PWR_6_o_MuLt_11_OUT> created at line 33.
+    Found 6x6-bit multiplier for signal <BUS_0006_PWR_6_o_MuLt_16_OUT> created at line 34.
+    Found 6x6-bit multiplier for signal <BUS_0008_PWR_6_o_MuLt_21_OUT> created at line 35.
+    Found 6x6-bit multiplier for signal <BUS_0010_PWR_6_o_MuLt_26_OUT> created at line 36.
+    Found 6x6-bit multiplier for signal <BUS_0012_PWR_6_o_MuLt_31_OUT> created at line 37.
+    Found 6x6-bit multiplier for signal <BUS_0014_PWR_6_o_MuLt_36_OUT> created at line 38.
+    Found 6x6-bit multiplier for signal <BUS_0016_PWR_6_o_MuLt_41_OUT> created at line 39.
+    Found 6x6-bit multiplier for signal <BUS_0018_PWR_6_o_MuLt_46_OUT> created at line 40.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <weight_mem>, simulation mismatch.
+    Found 1241x8-bit dual-port Read Only RAM <Mram_weight_mem> for signal <weight_mem>.
+    Summary:
+	inferred   5 RAM(s).
+	inferred  11 Multiplier(s).
+	inferred  19 Adder/Subtractor(s).
+Unit <Hidden_Weight_Memory> synthesized.
+
+Synthesizing Unit <Output_Weight_Memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Weight_Memory.v".
+WARNING:Xst:2999 - Signal 'weight_mem', unconnected in block 'Output_Weight_Memory', is tied to its initial value.
+    Found 32-bit adder for signal <n0030> created at line 31.
+    Found 32-bit adder for signal <n0031> created at line 32.
+    Found 32-bit adder for signal <n0032> created at line 33.
+    Found 32-bit adder for signal <n0033> created at line 34.
+    Found 32-bit adder for signal <n0034> created at line 35.
+    Found 32-bit adder for signal <n0035> created at line 36.
+    Found 32-bit adder for signal <n0036> created at line 37.
+    Found 32-bit adder for signal <n0037> created at line 38.
+    Found 32-bit adder for signal <n0038> created at line 39.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <weight_mem>, simulation mismatch.
+    Found 201x8-bit dual-port Read Only RAM <Mram_weight_mem> for signal <weight_mem>.
+    Summary:
+	inferred   5 RAM(s).
+	inferred   9 Adder/Subtractor(s).
+Unit <Output_Weight_Memory> synthesized.
+
+Synthesizing Unit <Hidden_Bios_Memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Hidden_Bios_Memory.v".
+WARNING:Xst:2999 - Signal 'bios_mem', unconnected in block 'Hidden_Bios_Memory', is tied to its initial value.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_3_OUT> created at line 31.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_6_OUT> created at line 32.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_9_OUT> created at line 33.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_12_OUT> created at line 34.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_15_OUT> created at line 35.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_18_OUT> created at line 36.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_21_OUT> created at line 37.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_24_OUT> created at line 38.
+    Found 5-bit adder for signal <PWR_8_o_GND_11_o_add_27_OUT> created at line 39.
+    Found 4x1-bit multiplier for signal <n0040> created at line 30.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <bios_mem>, simulation mismatch.
+    Found 21x8-bit dual-port Read Only RAM <Mram_bios_mem> for signal <bios_mem>.
+    Summary:
+	inferred   5 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+Unit <Hidden_Bios_Memory> synthesized.
+
+Synthesizing Unit <Output_Bios_Memory>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Output_Bios_Memory.v".
+    Summary:
+	no macro.
+Unit <Output_Bios_Memory> synthesized.
+
+Synthesizing Unit <MAC>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAC.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+Unit <MAC> synthesized.
+
+Synthesizing Unit <Multiplier8>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier8.v".
+    Summary:
+	no macro.
+Unit <Multiplier8> synthesized.
+
+Synthesizing Unit <Multiplier2>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Multiplier_2.v".
+    Summary:
+	no macro.
+Unit <Multiplier2> synthesized.
+
+Synthesizing Unit <Unsigned_Adder_4>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Unsigned_Adder_4.v".
+    Found 16-bit adder for signal <n0013> created at line 23.
+    Found 16-bit adder for signal <n0016> created at line 23.
+    Found 16-bit adder for signal <w> created at line 23.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+Unit <Unsigned_Adder_4> synthesized.
+
+Synthesizing Unit <Signed_Adder>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Signed_Adder.v".
+    Found 20-bit subtractor for signal <val_b[19]_val_a[19]_sub_9_OUT> created at line 45.
+    Found 20-bit subtractor for signal <val_a[19]_val_b[19]_sub_10_OUT> created at line 47.
+    Found 20-bit adder for signal <val_a[19]_val_b[19]_add_11_OUT> created at line 49.
+    Found 21-bit 4-to-1 multiplexer for signal <result> created at line 35.
+    Found 20-bit comparator lessequal for signal <n0004> created at line 38
+    Found 20-bit comparator lessequal for signal <n0007> created at line 44
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <Signed_Adder> synthesized.
+
+Synthesizing Unit <Register_21>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Register_21.v".
+    Found 21-bit register for signal <b>.
+    Summary:
+	inferred  21 D-type flip-flop(s).
+Unit <Register_21> synthesized.
+
+Synthesizing Unit <Activation_func>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Activation_func.v".
+WARNING:Xst:647 - Input <a<8:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <Activation_func> synthesized.
+
+Synthesizing Unit <Store_Regs>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Store_Regs.v".
+WARNING:Xst:647 - Input <input_sel<31:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3012 - Available block RAM resources offer a maximum of two write ports. You are apparently describing a RAM with 10 separate write ports for signal <store_reg>. The RAM will be expanded on registers.
+    Found 8-bit register for signal <store_reg_ff_0>.
+    Found 8-bit register for signal <store_reg_ff_1>.
+    Found 8-bit register for signal <store_reg_ff_2>.
+    Found 8-bit register for signal <store_reg_ff_3>.
+    Found 8-bit register for signal <store_reg_ff_4>.
+    Found 8-bit register for signal <store_reg_ff_5>.
+    Found 8-bit register for signal <store_reg_ff_6>.
+    Found 8-bit register for signal <store_reg_ff_7>.
+    Found 8-bit register for signal <store_reg_ff_8>.
+    Found 8-bit register for signal <store_reg_ff_9>.
+    Found 8-bit register for signal <store_reg_ff_10>.
+    Found 8-bit register for signal <store_reg_ff_11>.
+    Found 8-bit register for signal <store_reg_ff_12>.
+    Found 8-bit register for signal <store_reg_ff_13>.
+    Found 8-bit register for signal <store_reg_ff_14>.
+    Found 8-bit register for signal <store_reg_ff_15>.
+    Found 8-bit register for signal <store_reg_ff_16>.
+    Found 8-bit register for signal <store_reg_ff_17>.
+    Found 8-bit register for signal <store_reg_ff_18>.
+    Found 8-bit register for signal <store_reg_ff_19>.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_4_OUT> created at line 36.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_7_OUT> created at line 37.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_10_OUT> created at line 38.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_13_OUT> created at line 39.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_16_OUT> created at line 40.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_19_OUT> created at line 41.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_22_OUT> created at line 42.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_25_OUT> created at line 43.
+    Found 5-bit adder for signal <PWR_18_o_GND_20_o_add_28_OUT> created at line 44.
+    Found 4x1-bit multiplier for signal <n0044> created at line 35.
+    Found 8-bit 20-to-1 multiplexer for signal <store_values_out> created at line 29.
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_0> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_1> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_2> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_3> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_4> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_5> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_6> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_7> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_8> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_9> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_10> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_11> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_12> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_13> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_14> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_15> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_16> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_17> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_18> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Found 8-bit tristate buffer for signal <store_reg_trst_19> created at line 24
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   9 Adder/Subtractor(s).
+	inferred 160 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred 200 Tristate(s).
+Unit <Store_Regs> synthesized.
+
+Synthesizing Unit <MAX_Func>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\MAX_Func.v".
+    Found 8-bit comparator greater for signal <GND_21_o_mac1[7]_LessThan_3_o> created at line 36
+    Found 8-bit comparator greater for signal <GND_21_o_mac2[7]_LessThan_6_o> created at line 41
+    Found 8-bit comparator greater for signal <GND_21_o_mac3[7]_LessThan_9_o> created at line 45
+    Found 8-bit comparator greater for signal <GND_21_o_mac4[7]_LessThan_12_o> created at line 50
+    Found 8-bit comparator greater for signal <GND_21_o_mac5[7]_LessThan_15_o> created at line 55
+    Found 8-bit comparator greater for signal <GND_21_o_mac6[7]_LessThan_18_o> created at line 60
+    Found 8-bit comparator greater for signal <GND_21_o_mac7[7]_LessThan_21_o> created at line 65
+    Found 8-bit comparator greater for signal <GND_21_o_mac8[7]_LessThan_24_o> created at line 70
+    Found 8-bit comparator greater for signal <GND_21_o_mac9[7]_LessThan_27_o> created at line 74
+    Summary:
+	inferred   9 Comparator(s).
+	inferred  17 Multiplexer(s).
+Unit <MAX_Func> synthesized.
+
+Synthesizing Unit <Comparator>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Comparator.v".
+    Found 8-bit comparator equal for signal <w> created at line 25
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Comparator> synthesized.
+
+Synthesizing Unit <One_Counter>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\One_Counter.v".
+    Found 11-bit register for signal <w>.
+    Found 11-bit adder for signal <w[10]_GND_23_o_add_1_OUT> created at line 30.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+Unit <One_Counter> synthesized.
+
+Synthesizing Unit <Controller>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Controller.v".
+    Found 4-bit register for signal <ps>.
+    Found finite state machine <FSM_0> for signal <ps>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 14                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 16                                             |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Controller> synthesized.
+
+Synthesizing Unit <Counter_1>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Counter.v".
+        N = 751
+    Found 32-bit register for signal <result>.
+    Found 32-bit adder for signal <result[31]_GND_25_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_1> synthesized.
+
+Synthesizing Unit <Counter_2>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Counter.v".
+        N = 62
+    Found 32-bit register for signal <result>.
+    Found 32-bit adder for signal <result[31]_GND_26_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_2> synthesized.
+
+Synthesizing Unit <Counter_3>.
+    Related source file is "C:\Users\Alireza\Desktop\CAD_projects\Cad_project2\Counter.v".
+        N = 20
+    Found 32-bit register for signal <result>.
+    Found 32-bit adder for signal <result[31]_GND_27_o_add_1_OUT> created at line 33.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <Counter_3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 17
+ 1241x8-bit dual-port Read Only RAM                    : 5
+ 201x8-bit dual-port Read Only RAM                     : 5
+ 21x8-bit dual-port Read Only RAM                      : 5
+ 46501x8-bit single-port Read Only RAM                 : 1
+ 751x8-bit single-port Read Only RAM                   : 1
+# Multipliers                                          : 14
+ 32x6-bit multiplier                                   : 1
+ 4x1-bit multiplier                                    : 3
+ 6x5-bit multiplier                                    : 1
+ 6x6-bit multiplier                                    : 9
+# Adders/Subtractors                                   : 413
+ 10-bit subtractor                                     : 1
+ 11-bit adder                                          : 1
+ 16-bit adder                                          : 300
+ 20-bit adder                                          : 20
+ 20-bit subtractor                                     : 40
+ 32-bit adder                                          : 23
+ 32-bit subtractor                                     : 1
+ 5-bit adder                                           : 18
+ 6-bit adder                                           : 9
+# Registers                                            : 34
+ 11-bit register                                       : 1
+ 21-bit register                                       : 10
+ 32-bit register                                       : 3
+ 8-bit register                                        : 20
+# Comparators                                          : 50
+ 20-bit comparator lessequal                           : 40
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 9
+# Multiplexers                                         : 125
+ 21-bit 2-to-1 multiplexer                             : 60
+ 21-bit 4-to-1 multiplexer                             : 20
+ 32-bit 2-to-1 multiplexer                             : 6
+ 8-bit 2-to-1 multiplexer                              : 38
+ 8-bit 20-to-1 multiplexer                             : 1
+# Tristates                                            : 200
+ 8-bit tristate buffer                                 : 200
+# FSMs                                                 : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Counter_1>.
+The following registers are absorbed into counter <result>: 1 register on signal <result>.
+Unit <Counter_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_2>.
+The following registers are absorbed into counter <result>: 1 register on signal <result>.
+Unit <Counter_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_3>.
+The following registers are absorbed into counter <result>: 1 register on signal <result>.
+Unit <Counter_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Hidden_Bios_Memory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bios_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0040>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res0>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     addrB          | connected to signal <PWR_8_o_GND_11_o_add_3_OUT> |          |
+    |     doB            | connected to signal <res1>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bios_mem1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PWR_8_o_GND_11_o_add_6_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res2>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     addrB          | connected to signal <PWR_8_o_GND_11_o_add_9_OUT> |          |
+    |     doB            | connected to signal <res3>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bios_mem2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PWR_8_o_GND_11_o_add_12_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res4>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     addrB          | connected to signal <PWR_8_o_GND_11_o_add_15_OUT> |          |
+    |     doB            | connected to signal <res5>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bios_mem3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PWR_8_o_GND_11_o_add_18_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res6>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     addrB          | connected to signal <PWR_8_o_GND_11_o_add_21_OUT> |          |
+    |     doB            | connected to signal <res7>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_bios_mem4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <PWR_8_o_GND_11_o_add_24_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res8>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21-word x 8-bit                     |          |
+    |     addrB          | connected to signal <PWR_8_o_GND_11_o_add_27_OUT> |          |
+    |     doB            | connected to signal <res9>          |          |
+    -----------------------------------------------------------------------
+Unit <Hidden_Bios_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Hidden_Weight_Memory>.
+	Multiplier <Mmult_BUS_0002_PWR_6_o_MuLt_6_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0056_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0002_PWR_6_o_MuLt_6_OUT>.
+	Multiplier <Mmult_BUS_0004_PWR_6_o_MuLt_11_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0059_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT>.
+	Multiplier <Mmult_BUS_0008_PWR_6_o_MuLt_21_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0065_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0008_PWR_6_o_MuLt_21_OUT>.
+	Multiplier <Mmult_BUS_0006_PWR_6_o_MuLt_16_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0062_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0006_PWR_6_o_MuLt_16_OUT>.
+	Multiplier <Mmult_BUS_0010_PWR_6_o_MuLt_26_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0068_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0010_PWR_6_o_MuLt_26_OUT>.
+	Multiplier <Mmult_BUS_0012_PWR_6_o_MuLt_31_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0071_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0012_PWR_6_o_MuLt_31_OUT>.
+	Multiplier <Mmult_BUS_0014_PWR_6_o_MuLt_36_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0074_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT>.
+	Multiplier <Mmult_BUS_0016_PWR_6_o_MuLt_41_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0077_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0016_PWR_6_o_MuLt_41_OUT>.
+	Multiplier <Mmult_BUS_0018_PWR_6_o_MuLt_46_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0080_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_BUS_0018_PWR_6_o_MuLt_46_OUT>.
+	Multiplier <Mmult_PWR_6_o_PWR_6_o_MuLt_1_OUT> in block <Hidden_Weight_Memory> and adder/subtractor <Madd_n0053_Madd> in block <Hidden_Weight_Memory> are combined into a MAC<Maddsub_PWR_6_o_PWR_6_o_MuLt_1_OUT>.
+	Adder/Subtractor <Madd_n0082> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0002_PWR_6_o_MuLt_6_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0002_PWR_6_o_MuLt_6_OUT1>.
+	Adder/Subtractor <Madd_n0088> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0008_PWR_6_o_MuLt_21_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0008_PWR_6_o_MuLt_21_OUT1>.
+	Adder/Subtractor <Madd_n0084> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT1>.
+	Adder/Subtractor <Madd_n0086> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0006_PWR_6_o_MuLt_16_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0006_PWR_6_o_MuLt_16_OUT1>.
+	Adder/Subtractor <Madd_n0092> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0012_PWR_6_o_MuLt_31_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0012_PWR_6_o_MuLt_31_OUT1>.
+	Adder/Subtractor <Madd_n0090> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0010_PWR_6_o_MuLt_26_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0010_PWR_6_o_MuLt_26_OUT1>.
+	Adder/Subtractor <Madd_n0094> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT1>.
+	Adder/Subtractor <Madd_n0098> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0018_PWR_6_o_MuLt_46_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0018_PWR_6_o_MuLt_46_OUT1>.
+	Adder/Subtractor <Madd_n0096> in block <Hidden_Weight_Memory> and  <Maddsub_BUS_0016_PWR_6_o_MuLt_41_OUT> in block <Hidden_Weight_Memory> are combined into a MAC with pre-adder <Maddsub_BUS_0016_PWR_6_o_MuLt_41_OUT1>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0053>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res0>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     addrB          | connected to signal <n0056>         |          |
+    |     doB            | connected to signal <res1>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0059>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res2>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     addrB          | connected to signal <n0062>         |          |
+    |     doB            | connected to signal <res3>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0065>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res4>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     addrB          | connected to signal <n0068>         |          |
+    |     doB            | connected to signal <res5>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0071>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res6>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     addrB          | connected to signal <n0074>         |          |
+    |     doB            | connected to signal <res7>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0077>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res8>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 1241-word x 8-bit                   |          |
+    |     addrB          | connected to signal <n0080>         |          |
+    |     doB            | connected to signal <res9>          |          |
+    -----------------------------------------------------------------------
+Unit <Hidden_Weight_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Input_memory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_input_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 46501-word x 8-bit                  |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0009>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Input_memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Label_Memory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_label_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 751-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <test_sel[31]_GND_5_o_sub_1_OUT> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <Label_Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <MAC>.
+	The following adders/subtractors are grouped into adder tree <Mult/final_adder/Madd_w1> :
+ 	<Mult/add1/Madd_n0013> in block <MAC>, 	<Mult/add1/Madd_n0016> in block <MAC>, 	<Mult/add1/Madd_w> in block <MAC>, 	<Mult/add2/Madd_n0013> in block <MAC>, 	<Mult/add2/Madd_n0016> in block <MAC>, 	<Mult/add2/Madd_w> in block <MAC>, 	<Mult/add3/Madd_n0013> in block <MAC>, 	<Mult/add3/Madd_n0016> in block <MAC>, 	<Mult/add3/Madd_w> in block <MAC>, 	<Mult/add4/Madd_n0013> in block <MAC>, 	<Mult/add4/Madd_n0016> in block <MAC>, 	<Mult/add4/Madd_w> in block <MAC>.
+	The following adders/subtractors are grouped into adder tree <bios_Mult/final_adder/Madd_w1> :
+ 	<bios_Mult/add1/Madd_n0013> in block <MAC>, 	<bios_Mult/add1/Madd_n0016> in block <MAC>, 	<bios_Mult/add1/Madd_w> in block <MAC>, 	<bios_Mult/add2/Madd_n0013> in block <MAC>, 	<bios_Mult/add2/Madd_n0016> in block <MAC>, 	<bios_Mult/add2/Madd_w> in block <MAC>, 	<bios_Mult/add3/Madd_n0013> in block <MAC>, 	<bios_Mult/add3/Madd_n0016> in block <MAC>, 	<bios_Mult/add3/Madd_w> in block <MAC>, 	<bios_Mult/add4/Madd_n0013> in block <MAC>, 	<bios_Mult/add4/Madd_n0016> in block <MAC>, 	<bios_Mult/add4/Madd_w> in block <MAC>.
+Unit <MAC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <One_Counter>.
+The following registers are absorbed into counter <w>: 1 register on signal <w>.
+Unit <One_Counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Output_Weight_Memory>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <input_sel>     |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res0>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0030>         |          |
+    |     doB            | connected to signal <res1>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem1> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0031>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res2>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0032>         |          |
+    |     doB            | connected to signal <res3>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem2> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0033>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res4>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0034>         |          |
+    |     doB            | connected to signal <res5>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem3> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0035>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res6>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0036>         |          |
+    |     doB            | connected to signal <res7>          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_weight_mem4> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <n0037>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <res8>          |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 201-word x 8-bit                    |          |
+    |     addrB          | connected to signal <n0038>         |          |
+    |     doB            | connected to signal <res9>          |          |
+    -----------------------------------------------------------------------
+Unit <Output_Weight_Memory> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 17
+ 1241x8-bit dual-port distributed Read Only RAM        : 5
+ 201x8-bit dual-port distributed Read Only RAM         : 5
+ 21x8-bit dual-port distributed Read Only RAM          : 5
+ 46501x8-bit single-port distributed Read Only RAM     : 1
+ 751x8-bit single-port distributed Read Only RAM       : 1
+# MACs                                                 : 10
+ 6x5-to-11-bit MAC                                     : 1
+ 6x6-to-11-bit MAC with pre-adder                      : 9
+# Multipliers                                          : 4
+ 32x6-bit multiplier                                   : 1
+ 4x1-bit multiplier                                    : 3
+# Adders/Subtractors                                   : 90
+ 10-bit subtractor                                     : 1
+ 16-bit adder                                          : 1
+ 20-bit adder                                          : 20
+ 20-bit subtractor                                     : 40
+ 32-bit subtractor                                     : 1
+ 5-bit adder                                           : 18
+ 8-bit adder                                           : 9
+# Adder Trees                                          : 20
+ 16-bit / 16-inputs adder tree                         : 20
+# Counters                                             : 4
+ 11-bit up counter                                     : 1
+ 32-bit up counter                                     : 3
+# Registers                                            : 370
+ Flip-Flops                                            : 370
+# Comparators                                          : 50
+ 20-bit comparator lessequal                           : 40
+ 8-bit comparator equal                                : 1
+ 8-bit comparator greater                              : 9
+# Multiplexers                                         : 122
+ 21-bit 2-to-1 multiplexer                             : 60
+ 21-bit 4-to-1 multiplexer                             : 20
+ 32-bit 2-to-1 multiplexer                             : 3
+ 8-bit 2-to-1 multiplexer                              : 38
+ 8-bit 20-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 10
+ 1-bit xor2                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_47>, <bios_Mult/mul_46> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_47>, <bios_Mult/mul_45> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_37>, <bios_Mult/mul_36> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_37>, <bios_Mult/mul_35> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_27>, <bios_Mult/mul_26> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_27>, <bios_Mult/mul_25> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_17>, <bios_Mult/mul_16> of unit <Multiplier2> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <MAC>: instances <bios_Mult/mul_17>, <bios_Mult/mul_15> of unit <Multiplier2> are equivalent, second instance is removed
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <cont/FSM_0> on signal <ps[1:10]> with one-hot encoding.
+---------------------
+ State | Encoding
+---------------------
+ 0000  | 0000000001
+ 0001  | 0000000010
+ 0010  | 0000000100
+ 1001  | 0000001000
+ 0011  | 0000010000
+ 0100  | 0000100000
+ 0101  | 0001000000
+ 0110  | 0010000000
+ 0111  | 0100000000
+ 1000  | 1000000000
+---------------------
+WARNING:Xst:2677 - Node <input_mem/Mmult_n00081> of sequential type is unconnected in block <Datapath>.
+WARNING:Xst:2042 - Unit Store_Regs: 160 internal tristates are replaced by logic (pull-up yes): store_reg_trst_0<0>, store_reg_trst_0<1>, store_reg_trst_0<2>, store_reg_trst_0<3>, store_reg_trst_0<4>, store_reg_trst_0<5>, store_reg_trst_0<6>, store_reg_trst_0<7>, store_reg_trst_10<0>, store_reg_trst_10<1>, store_reg_trst_10<2>, store_reg_trst_10<3>, store_reg_trst_10<4>, store_reg_trst_10<5>, store_reg_trst_10<6>, store_reg_trst_10<7>, store_reg_trst_11<0>, store_reg_trst_11<1>, store_reg_trst_11<2>, store_reg_trst_11<3>, store_reg_trst_11<4>, store_reg_trst_11<5>, store_reg_trst_11<6>, store_reg_trst_11<7>, store_reg_trst_12<0>, store_reg_trst_12<1>, store_reg_trst_12<2>, store_reg_trst_12<3>, store_reg_trst_12<4>, store_reg_trst_12<5>, store_reg_trst_12<6>, store_reg_trst_12<7>, store_reg_trst_13<0>, store_reg_trst_13<1>, store_reg_trst_13<2>, store_reg_trst_13<3>, store_reg_trst_13<4>, store_reg_trst_13<5>, store_reg_trst_13<6>, store_reg_trst_13<7>, store_reg_trst_14<0>, store_reg_trst_14<1>, store_reg_trst_14<2>, store_reg_trst_14<3>, store_reg_trst_14<4>, store_reg_trst_14<5>, store_reg_trst_14<6>, store_reg_trst_14<7>, store_reg_trst_15<0>, store_reg_trst_15<1>, store_reg_trst_15<2>, store_reg_trst_15<3>, store_reg_trst_15<4>, store_reg_trst_15<5>, store_reg_trst_15<6>, store_reg_trst_15<7>, store_reg_trst_16<0>, store_reg_trst_16<1>, store_reg_trst_16<2>, store_reg_trst_16<3>, store_reg_trst_16<4>, store_reg_trst_16<5>, store_reg_trst_16<6>, store_reg_trst_16<7>, store_reg_trst_17<0>, store_reg_trst_17<1>, store_reg_trst_17<2>, store_reg_trst_17<3>, store_reg_trst_17<4>, store_reg_trst_17<5>, store_reg_trst_17<6>, store_reg_trst_17<7>, store_reg_trst_18<0>, store_reg_trst_18<1>, store_reg_trst_18<2>, store_reg_trst_18<3>, store_reg_trst_18<4>, store_reg_trst_18<5>, store_reg_trst_18<6>, store_reg_trst_18<7>, store_reg_trst_19<0>, store_reg_trst_19<1>, store_reg_trst_19<2>, store_reg_trst_19<3>, store_reg_trst_19<4>, store_reg_trst_19<5>, store_reg_trst_19<6>, store_reg_trst_19<7>, store_reg_trst_1<0>, store_reg_trst_1<1>, store_reg_trst_1<2>, store_reg_trst_1<3>, store_reg_trst_1<4>, store_reg_trst_1<5>, store_reg_trst_1<6>, store_reg_trst_1<7>, store_reg_trst_2<0>, store_reg_trst_2<1>, store_reg_trst_2<2>, store_reg_trst_2<3>, store_reg_trst_2<4>, store_reg_trst_2<5>, store_reg_trst_2<6>, store_reg_trst_2<7>, store_reg_trst_3<0>, store_reg_trst_3<1>, store_reg_trst_3<2>, store_reg_trst_3<3>, store_reg_trst_3<4>, store_reg_trst_3<5>, store_reg_trst_3<6>, store_reg_trst_3<7>, store_reg_trst_4<0>, store_reg_trst_4<1>, store_reg_trst_4<2>, store_reg_trst_4<3>, store_reg_trst_4<4>, store_reg_trst_4<5>, store_reg_trst_4<6>, store_reg_trst_4<7>, store_reg_trst_5<0>, store_reg_trst_5<1>, store_reg_trst_5<2>, store_reg_trst_5<3>, store_reg_trst_5<4>, store_reg_trst_5<5>, store_reg_trst_5<6>, store_reg_trst_5<7>, store_reg_trst_6<0>, store_reg_trst_6<1>, store_reg_trst_6<2>, store_reg_trst_6<3>, store_reg_trst_6<4>, store_reg_trst_6<5>, store_reg_trst_6<6>, store_reg_trst_6<7>, store_reg_trst_7<0>, store_reg_trst_7<1>, store_reg_trst_7<2>, store_reg_trst_7<3>, store_reg_trst_7<4>, store_reg_trst_7<5>, store_reg_trst_7<6>, store_reg_trst_7<7>, store_reg_trst_8<0>, store_reg_trst_8<1>, store_reg_trst_8<2>, store_reg_trst_8<3>, store_reg_trst_8<4>, store_reg_trst_8<5>, store_reg_trst_8<6>, store_reg_trst_8<7>, store_reg_trst_9<0>, store_reg_trst_9<1>, store_reg_trst_9<2>, store_reg_trst_9<3>, store_reg_trst_9<4>, store_reg_trst_9<5>, store_reg_trst_9<6>, store_reg_trst_9<7>.
+
+Optimizing unit <Neuron_Network> ...
+
+Optimizing unit <Register_21> ...
+
+Optimizing unit <Datapath> ...
+
+Optimizing unit <Hidden_Weight_Memory> ...
+
+Optimizing unit <MAC> ...
+
+Optimizing unit <Store_Regs> ...
+
+Optimizing unit <Hidden_Bios_Memory> ...
+
+Optimizing unit <Output_Weight_Memory> ...
+
+Optimizing unit <MAX_Func> ...
+
+Optimizing unit <Controller> ...
+WARNING:Xst:1710 - FF/Latch <dp/store_regs/_o1040_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1054_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1068_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1082_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1096_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1138_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1110_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1124_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1152_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1166_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1180_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1194_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1236_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1208_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1222_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1250_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1264_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1278_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1292_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <dp/store_regs/_o1306_7> (without init value) has a constant value of 0 in block <Neuron_Network>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Neuron_Network, actual ratio is 25.
+FlipFlop cont/ps_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop cont/ps_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop cont/ps_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop cont/ps_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 471
+ Flip-Flops                                            : 471
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Neuron_Network.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 19756
+#      GND                         : 1
+#      INV                         : 268
+#      LUT1                        : 348
+#      LUT2                        : 1301
+#      LUT3                        : 853
+#      LUT4                        : 1316
+#      LUT5                        : 501
+#      LUT6                        : 9617
+#      MUXCY                       : 2806
+#      MUXF7                       : 49
+#      VCC                         : 1
+#      XORCY                       : 2695
+# FlipFlops/Latches                : 471
+#      FDC                         : 13
+#      FDCE                        : 96
+#      FDE                         : 140
+#      FDP                         : 1
+#      FDRE                        : 221
+# RAMS                             : 520
+#      RAM128X1D                   : 480
+#      RAM32X1D                    : 40
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+# DSPs                             : 1
+#      DSP48E1                     : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vcx75tff484-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             471  out of  93120     0%  
+ Number of Slice LUTs:                16204  out of  46560    34%  
+    Number used as Logic:             14204  out of  46560    30%  
+    Number used as Memory:             2000  out of  16720    11%  
+       Number used as RAM:             2000
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:  16245
+   Number with an unused Flip Flop:   15774  out of  16245    97%  
+   Number with an unused LUT:            41  out of  16245     0%  
+   Number of fully used LUT-FF pairs:   430  out of  16245     2%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    240     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+ Number of DSP48E1s:                      1  out of    288     0%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------------------+-----------------------------------------+-------+
+Clock Signal                                                      | Clock buffer(FF name)                   | Load  |
+------------------------------------------------------------------+-----------------------------------------+-------+
+clk                                                               | BUFGP                                   | 471   |
+dp/hidden_weight_mem/Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT1_Madd_33| NONE(dp/hidden_bios_mem/Mram_bios_mem37)| 520   |
+------------------------------------------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 17.484ns (Maximum Frequency: 57.195MHz)
+   Minimum input arrival time before clock: 0.779ns
+   Maximum output required time after clock: 0.676ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 17.484ns (frequency: 57.195MHz)
+  Total number of paths / destination ports: 829033105330998 / 1245
+-------------------------------------------------------------------------
+Delay:               17.484ns (Levels of Logic = 40)
+  Source:            cont/ps_FSM_FFd3_1 (FF)
+  Destination:       dp/one_counter/w_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cont/ps_FSM_FFd3_1 to dp/one_counter/w_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.317   0.431  cont/ps_FSM_FFd3_1 (cont/ps_FSM_FFd3_1)
+     LUT2:I0->O          144   0.061   0.490  cont/ps__n0048<5>1 (dp/hidden_weight_mem/Maddsub_BUS_0014_PWR_6_o_MuLt_36_OUT1_Madd3_lut<6>)
+     RAM32X1D:DPRA1->DPO   14   0.061   0.498  dp/hidden_bios_mem/Mram_bios_mem6 (dp/hid_bios_val_1<1>)
+     LUT4:I2->O            2   0.061   0.517  dp/mac1/bios_Mult/mul_17/c1_211 (dp/mac1/bios_Mult/mul_17/c1_2)
+     LUT3:I0->O            1   0.061   0.357  dp/mac1/ADDERTREE_INTERNAL_Madd92 (dp/mac1/ADDERTREE_INTERNAL_Madd92)
+     LUT4:I3->O            1   0.061   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd9_lut<0>7 (dp/mac1/ADDERTREE_INTERNAL_Madd9_lut<0>7)
+     MUXCY:S->O            1   0.248   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>_6 (dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>7)
+     MUXCY:CI->O           1   0.017   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>_7 (dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>8)
+     MUXCY:CI->O           1   0.017   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>_8 (dp/mac1/ADDERTREE_INTERNAL_Madd9_cy<0>9)
+     XORCY:CI->O           1   0.204   0.357  dp/mac1/ADDERTREE_INTERNAL_Madd9_xor<0>_9 (dp/mac1/ADDERTREE_INTERNAL_Madd_109)
+     LUT2:I1->O            1   0.061   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd13_lut<10> (dp/mac1/ADDERTREE_INTERNAL_Madd13_lut<10>)
+     MUXCY:S->O            1   0.248   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd13_cy<10> (dp/mac1/ADDERTREE_INTERNAL_Madd13_cy<10>)
+     XORCY:CI->O           2   0.204   0.362  dp/mac1/ADDERTREE_INTERNAL_Madd13_xor<11> (dp/mac1/ADDERTREE_INTERNAL_Madd_1115)
+     LUT3:I2->O            1   0.061   0.357  dp/mac1/ADDERTREE_INTERNAL_Madd1411 (dp/mac1/ADDERTREE_INTERNAL_Madd1411)
+     LUT4:I3->O            1   0.061   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd14_lut<0>12 (dp/mac1/ADDERTREE_INTERNAL_Madd14_lut<0>12)
+     MUXCY:S->O            0   0.248   0.000  dp/mac1/ADDERTREE_INTERNAL_Madd14_cy<0>_11 (dp/mac1/ADDERTREE_INTERNAL_Madd14_cy<0>12)
+     XORCY:CI->O           7   0.204   0.391  dp/mac1/ADDERTREE_INTERNAL_Madd14_xor<0>_12 (dp/mac1/ADDERTREE_INTERNAL_Madd_1314)
+     LUT2:I1->O            1   0.061   0.000  dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_lut<13> (dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_lut<13>)
+     MUXCY:S->O            1   0.248   0.000  dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<13> (dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<13>)
+     MUXCY:CI->O           1   0.017   0.000  dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<14> (dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<14>)
+     MUXCY:CI->O           1   0.017   0.000  dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15> (dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_cy<15>)
+     XORCY:CI->O           1   0.204   0.566  dp/mac1/bios_Adder/Msub_val_b[19]_val_a[19]_sub_9_OUT_xor<16> (dp/mac1/bios_Adder/val_b[19]_val_a[19]_sub_9_OUT<16>)
+     LUT4:I0->O            7   0.061   0.460  dp/mac1/result<0>41 (dp/mac1/result<0>_bdd7)
+     LUT6:I4->O            1   0.061   0.357  dp/mac1/result<2>_SW0 (N122)
+     LUT6:I5->O            8   0.061   0.733  dp/mac1/result<2> (dp/result_1<2>)
+     LUT6:I1->O            2   0.061   0.344  dp/max_func/GND_21_o_mac1[7]_LessThan_3_o23 (dp/max_func/GND_21_o_mac1[7]_LessThan_3_o22)
+     MUXF7:S->O           15   0.230   0.435  dp/max_func/GND_21_o_mac1[7]_LessThan_3_o24 (dp/max_func/GND_21_o_mac1[7]_LessThan_3_o23)
+     LUT6:I5->O           17   0.061   0.447  dp/max_func/Mmux_GND_21_o_mac2[7]_mux_7_OUT61 (dp/max_func/GND_21_o_mac2[7]_mux_7_OUT<5>)
+     LUT6:I5->O            3   0.061   0.438  dp/max_func/Mmux_GND_21_o_mac2[7]_mux_7_OUT41_SW0 (N620)
+     LUT5:I3->O            3   0.061   0.706  dp/max_func/GND_21_o_mac3[7]_LessThan_9_o1_SW10 (N558)
+     LUT6:I1->O            2   0.061   0.362  dp/max_func/GND_21_o_mac5[7]_LessThan_15_o1_SW0_SW0 (N196)
+     LUT6:I5->O            1   0.061   0.426  dp/max_func/GND_21_o_mac4[7]_LessThan_12_o21_SW5 (N701)
+     LUT6:I4->O            6   0.061   0.540  dp/max_func/GND_21_o_mac5[7]_LessThan_15_o1_SW0 (N157)
+     LUT5:I2->O            9   0.061   0.402  dp/max_func/GND_21_o_mac5[7]_LessThan_15_o1 (dp/max_func/GND_21_o_mac5[7]_LessThan_15_o2)
+     LUT5:I4->O            7   0.061   0.728  dp/max_func/GND_21_o_mac6[7]_LessThan_18_o1_SW0 (N155)
+     LUT6:I1->O            5   0.061   0.380  dp/max_func/GND_21_o_mac7[7]_LessThan_21_o1_SW0 (N152)
+     LUT5:I4->O            3   0.061   0.438  dp/max_func/GND_21_o_mac7[7]_LessThan_21_o1_SW6 (N800)
+     LUT6:I4->O            1   0.061   0.357  dp/max_func/GND_21_o_mac9[7]_LessThan_27_o21_SW0_SW0 (N327)
+     LUT6:I5->O            2   0.061   0.344  dp/max_func/GND_21_o_mac9[7]_LessThan_27_o21_SW0 (N242)
+     MUXF7:S->O            1   0.230   0.426  dp/max_func/GND_21_o_mac9[7]_LessThan_27_o1_SW6 (N1293)
+     LUT5:I3->O           11   0.061   0.395  dp/one_counter/_n0015_inv_SW0 (N4)
+     FDRE:CE                   0.196          dp/one_counter/w_0
+    ----------------------------------------
+    Total                     17.484ns (4.435ns logic, 13.049ns route)
+                                       (25.4% logic, 74.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.779ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       cont/ps_FSM_FFd10 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to cont/ps_FSM_FFd10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.003   0.411  rst_IBUF (rst_IBUF)
+     FDC:CLR                   0.365          cont/ps_FSM_FFd9
+    ----------------------------------------
+    Total                      0.779ns (0.368ns logic, 0.411ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 11 / 11
+-------------------------------------------------------------------------
+Offset:              0.676ns (Levels of Logic = 1)
+  Source:            dp/one_counter/w_10 (FF)
+  Destination:       correct_count<10> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: dp/one_counter/w_10 to correct_count<10>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.317   0.356  dp/one_counter/w_10 (dp/one_counter/w_10)
+     OBUF:I->O                 0.003          correct_count_10_OBUF (correct_count<10>)
+    ----------------------------------------
+    Total                      0.676ns (0.320ns logic, 0.356ns route)
+                                       (47.3% logic, 52.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------+---------+---------+---------+---------+
+clk                                                               |   17.484|         |         |         |
+dp/hidden_weight_mem/Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT1_Madd_33|   17.144|         |         |         |
+------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock dp/hidden_weight_mem/Maddsub_BUS_0004_PWR_6_o_MuLt_11_OUT1_Madd_33
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    4.631|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9697.00 secs
+Total CPU time to Xst completion: 9696.40 secs
+ 
+--> 
+
+Total memory usage is 506964 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   53 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+

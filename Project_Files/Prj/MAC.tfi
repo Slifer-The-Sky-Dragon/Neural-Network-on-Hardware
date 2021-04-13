@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+MAC instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .rst_Acc(rst_Acc), 
+    .ld_Acc(ld_Acc), 
+    .cur_input(cur_input), 
+    .cur_weight(cur_weight), 
+    .cur_bios(cur_bios), 
+    .result(result)
+    );
+
+

@@ -1,0 +1,37 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\ISE-App\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc Neuron_Network.ucf -p xc6vcx75t-ff484-2
+Neuron_Network.ngc Neuron_Network.ngd
+
+Reading NGO file
+"C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/Neuron_Network.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "Neuron_Network.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 236192 kilobytes
+
+Writing NGD file "Neuron_Network.ngd" ...
+Total REAL time to NGDBUILD completion:  25 sec
+Total CPU time to NGDBUILD completion:   25 sec
+
+Writing NGDBUILD log file "Neuron_Network.bld"...

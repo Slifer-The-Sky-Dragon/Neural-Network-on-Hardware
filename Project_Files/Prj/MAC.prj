@@ -1,0 +1,7 @@
+verilog work "Unsigned_Adder_4.v"
+verilog work "Multiplier_2.v"
+verilog work "Signed_Adder.v"
+verilog work "Register_21.v"
+verilog work "Multiplier8.v"
+verilog work "Activation_func.v"
+verilog work "MAC.v"

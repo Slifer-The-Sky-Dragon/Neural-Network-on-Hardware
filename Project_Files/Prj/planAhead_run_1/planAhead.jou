@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Jan 22 18:46:03 2021
+# Process ID: 2932
+# Log file: C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Alireza/Desktop/CAD_projects/Cad_project2/pa.fromNcd.tcl
